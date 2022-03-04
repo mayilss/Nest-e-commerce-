@@ -53,7 +53,7 @@
         }
     }
 }
-.myDropdown-btn {
+.header-top-dropdown-btn {
     position: relative;
     background-color: white;
     padding: 0 10px 0 10px;
@@ -71,9 +71,9 @@
             margin-left: 5px;
         }
     }
-    .myDropdown-content {
+    .header-top-dropdown-content {
         position: absolute;
-        top: 33px;
+        top: 25px;
         right: 0px;
         a {
             display: flex;
@@ -86,36 +86,92 @@
     }
 }
 
-//     .my-dropdown{
-//         display: flex;
-//         flex-direction: column;
-//         position: relative;
-//         .dropdown-list{
-//             position: absolute;
-//             top: 32px;
-//             padding: 10px;
-//             border-left: 1px solid $gray-light;
-//             border-right: 1px solid $gray-light;
-//             border-bottom: 1px solid $gray-light;
-//             display: none;
-//         }
-//         .dropdown-active{
-//             display: block !important;
-//         }
-//         a{
-//             color: $gray;
-//             font-size: 13px;
-//             font-weight: 400;
-//             padding: 0 10px 0 10px;
-//         }
-//         li{
-//             display: flex;
-//             align-items: center;
-//             a{
-//                 color: black;
-//                 font-size: 13px;
-//                 font-weight: 400;
-//             }
-//             padding: 0 10px 0 10px;
-//         }
-//     }
+.header-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10px;
+    border-bottom: 1px solid $gray-light;
+}
+.search-container{
+    border: 2px solid $green;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    // max-width: 700px;
+    .search-dropdown-btn{
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        color: #253D4E;
+        font-size: 14px;
+        padding: 0 10px 0 10px;
+        border-right: 1px solid $gray-light;
+        i{
+            margin-left: 5px;
+        }
+    }
+    .search-dropdown-content{
+        height: 300px;
+        overflow-y: scroll;
+        border-radius: 5px;
+        input{
+            margin: 10px;
+            border: 1px solid $green;
+            border-radius: 5px;
+            padding: 8px;
+            &:focus{
+                outline: none;
+            }
+        }
+        a{
+            font-size: 14px;
+            color: $gray;
+        }
+    }
+    form{
+        margin-left: 10px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+        // width: 100%;
+    }
+    .search{
+        border: none;
+        font-size: 13px;
+        font-weight: 400;
+        color: $gray;
+        // width: 100%;
+    }
+    .search-btn{
+        background-color: transparent;
+        border: none;
+        color: $gray;
+    }
+}
+.header-bottom-right{
+    display: flex;
+    .header-bottom-item{
+        display: flex;
+        position: relative;
+        span{
+            position: absolute;
+            border-radius: 50%;
+            background-color: $green;
+            color: white;
+            font-size: 12px;
+            text-align: center;
+            width: 18px;
+            height: 18px;
+            top: -8px;
+            left: 15px;
+        }
+        p{
+            padding: 0 20px 0 10px;
+            font-size: 16px;
+            color: $gray;
+        }
+    }
+}
