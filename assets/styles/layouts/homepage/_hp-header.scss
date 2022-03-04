@@ -1,0 +1,121 @@
+.homepage-header {
+    padding: 0;
+    margin: 0;
+}
+.header-top {
+    padding: 10px;
+    border-bottom: 1px solid $gray-light;
+    display: flex;
+    justify-content: space-between;
+}
+.header-top-left {
+    ul {
+        display: flex;
+        li {
+            transition: 0.3s ease-in-out;
+            a {
+                color: $gray;
+                font-size: 13px;
+                font-weight: 400;
+                font-family: "Lato", sans-serif;
+            }
+            padding: 0 10px 0 10px;
+            &:not(:last-child) {
+                border-right: 1px solid $gray-light;
+            }
+            &:hover {
+                a {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+.header-top-mid {
+    p {
+        font-family: "Lato", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        color: $gray;
+    }
+}
+.header-top-right {
+    display: flex;
+    p {
+        font-family: "Lato", sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        color: $gray;
+        padding: 0 10px 0 10px;
+        border-right: 1px solid $gray-light;
+        span {
+            color: $green;
+        }
+    }
+}
+.myDropdown-btn {
+    position: relative;
+    background-color: white;
+    padding: 0 10px 0 10px;
+    &:not(:last-child) {
+        border-right: 1px solid $gray-light;
+    }
+    button {
+        background-color: white;
+        font-family: "Lato", sans-serif;
+        color: $gray;
+        border: none;
+        font-size: 13px;
+        font-weight: 400;
+        i {
+            margin-left: 5px;
+        }
+    }
+    .myDropdown-content {
+        position: absolute;
+        top: 33px;
+        right: 0px;
+        a {
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+            color: $gray;
+            font-family: "Lato", sans-serif;
+            font-size: 13px;
+        }
+    }
+}
+
+//     .my-dropdown{
+//         display: flex;
+//         flex-direction: column;
+//         position: relative;
+//         .dropdown-list{
+//             position: absolute;
+//             top: 32px;
+//             padding: 10px;
+//             border-left: 1px solid $gray-light;
+//             border-right: 1px solid $gray-light;
+//             border-bottom: 1px solid $gray-light;
+//             display: none;
+//         }
+//         .dropdown-active{
+//             display: block !important;
+//         }
+//         a{
+//             color: $gray;
+//             font-size: 13px;
+//             font-weight: 400;
+//             padding: 0 10px 0 10px;
+//         }
+//         li{
+//             display: flex;
+//             align-items: center;
+//             a{
+//                 color: black;
+//                 font-size: 13px;
+//                 font-weight: 400;
+//             }
+//             padding: 0 10px 0 10px;
+//         }
+//     }
