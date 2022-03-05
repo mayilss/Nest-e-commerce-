@@ -1,0 +1,8 @@
+@mixin dropdownBtn{
+        background-color: transparent;
+        border: none;
+        color: $gray;
+        &:focus{
+            outline: none;
+        }
+}

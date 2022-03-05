@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"/>
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
@@ -96,17 +97,125 @@
                 <div class="header-bottom-item">
                     <img src="./assets/images/icon-cart.svg" alt="">
                     <span>0</span>
-                    <p>Cart</p>
+                    <button id="cart" class="cart-dropdown-btn">Cart</button>
                 </div>
-                <div class="header-bottom-item">
+                <div class="header-bottom-item account-holder">
                     <img src="./assets/images/icon-user.svg" alt="">
-                    <p>Account</p>
+                    <button id="account" class="account-dropdown-btn">Account</button>
+                    <div class="account-dropdown-content">
+                        <ul>
+                            <li><a href="#"><i class="fa-regular fa-user"></i>My Account</a></li>
+                            <li><a href="#"><i class="fa-solid fa-location-dot"></i>Order Tracking</a></li>
+                            <li><a href="#"><i class="fa-solid fa-tag"></i>My Voucher</a></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i>My Wishlist</a></li>
+                            <li><a href="#"><i class="fa-solid fa-sliders"></i>Settings</a></li>
+                            <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sign out</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <nav>
+        <nav class="header-nav container-fluid">
+            <div class="nav-dropdown">
+                <a class="nav-dropdown-btn"><i class="fi fi-rr-apps"></i>Browse All Categories<i class="fa-solid fa-angle-down"></i></a>
+            </div>
+            <a href="#" class="nav-hotDeals nav-item"><img src="./assets/images/icon-hot.svg" alt="">Hot Deals</a>
+            <div class="nav-dropdown-holder">
+                <a href="#" class="nav-home nav-item">Home<i class="fa-solid fa-angle-down"></i></a>
+                <div class="nav-dropdown-content">
+                    <a href="#" class="nav-dropdown-item">Home 1</a>
+                    <a href="#" class="nav-dropdown-item">Home 2</a>
+                    <a href="#" class="nav-dropdown-item">Home 3</a>
+                    <a href="#" class="nav-dropdown-item">Home 4</a>
+                    <a href="#" class="nav-dropdown-item">Home 5</a>
+                    <a href="#" class="nav-dropdown-item">Home 6</a>
+                </div>
+            </div>
+            <a href="#" class="nav-about nav-item">About</a>
+            <div class="nav-dropdown-holder">
+                <a href="#" class="nav-shop nav-item">Shop<i class="fa-solid fa-angle-down"></i></a>
+                <div class="nav-dropdown-content">
+                    <a href="#" class="nav-dropdown-item">Shop Grid - Right Sidebar</a>
+                    <a href="#" class="nav-dropdown-item">Shop Grid - Left Sidebar</a>
+                    <a href="#" class="nav-dropdown-item">Shop List - Right Sidebar</a>
+                    <a href="#" class="nav-dropdown-item">Shop List - Left Sidebar</a>
+                    <a href="#" class="nav-dropdown-item">Shop - Wide</a>
+                    <a href="#" class="nav-dropdown-item">Single Product</a>
+                    <a href="#" class="nav-dropdown-item">Shop - Filter</a>
+                    <a href="#" class="nav-dropdown-item">Shop - Wishlist</a>
+                    <a href="#" class="nav-dropdown-item">Shop - Cart</a>
 
+                    <a href="#" class="nav-dropdown-item">Shop - Checkout</a>
+                    <a href="#" class="nav-dropdown-item">Shop - Compare</a>
+                    <a href="#" class="nav-dropdown-item">Shop Invoice</a>
+                </div>
+            </div>
+            <div class="nav-dropdown-holder">
+                <a href="#" class="nav-home nav-item">Vendors<i class="fa-solid fa-angle-down"></i></a>
+                <div class="nav-dropdown-content">
+                    <a href="#" class="nav-dropdown-item">Vendors Grid</a>
+                    <a href="#" class="nav-dropdown-item">Vendors List</a>
+                    <a href="#" class="nav-dropdown-item">Vendor Details 01</a>
+                    <a href="#" class="nav-dropdown-item">Vendor Details 02</a>
+                    <a href="#" class="nav-dropdown-item">Vendor Dashboard</a>
+                    <a href="#" class="nav-dropdown-item">Vendor Guide</a>
+                </div>
+            </div>
+            <a href="#" class="nav-megaMenu nav-item">Mega Menu<i class="fa-solid fa-angle-down"></i></a>
+            <div class="nav-dropdown-holder">
+                <a href="#" class="nav-home nav-item">Blog<i class="fa-solid fa-angle-down"></i></a>
+                <div class="nav-dropdown-content">
+                    <a href="#" class="nav-dropdown-item">Blog Category Grid</a>
+                    <a href="#" class="nav-dropdown-item">Blog Category List</a>
+                    <a href="#" class="nav-dropdown-item">Blog Category Big</a>
+                    <a href="#" class="nav-dropdown-item">Blog Category Wide</a>
+                    <a href="#" class="nav-dropdown-item">Single Post</a>
+                </div>
+            </div>
+            <div class="nav-dropdown-holder">
+                <a href="#" class="nav-home nav-item">Pages<i class="fa-solid fa-angle-down"></i></a>
+                <div class="nav-dropdown-content">
+                    <a href="#" class="nav-dropdown-item">About Us</a>
+                    <a href="#" class="nav-dropdown-item">Contact</a>
+                    <a href="#" class="nav-dropdown-item">My Account</a>
+                    <a href="#" class="nav-dropdown-item">Login</a>
+                    <a href="#" class="nav-dropdown-item">Register</a>
+                    <a href="#" class="nav-dropdown-item">Purchase Guide</a>
+                    <a href="#" class="nav-dropdown-item">Privacy Policy</a>
+                    <a href="#" class="nav-dropdown-item">Terms of Service</a>
+                    <a href="#" class="nav-dropdown-item">404 Page</a>
+                </div>
+            </div>
+            <a href="#" class="nav-contact nav-item">Contact</i></a>
+            <div class="nav-hotline">
+                <img src="./assets/images/icon-headphone.svg" alt="">
+                <div class="hotline-holder">
+                    <p>1900 - 888</p>
+                    <span>24/7 Support Center</span> 
+                </div>
+            </div>
         </nav>
+        <div class="nav-mobile">
+            <div class="nav-mobile-header">
+                <img width="140px" src="./assets/images/logo.svg" alt="">
+                <a href="#" class="nav-mobile-close-btn"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <form class="nav-mobile-search" action="">
+                <input type="text" placeholder="Search for items...">
+                <button type="submit"><i class="fa-solid fa-search"></i></button>
+            </form>
+            <div class="nav-mobile-content">
+                <ul>
+                    <li><a class="nav-mobile-item" href="#">Home</a></li>
+                    <li><a class="nav-mobile-item" href="#">Shop</a></li>
+                    <li><a class="nav-mobile-item" href="#">Vendors</a></li>
+                    <li><a class="nav-mobile-item" href="#">Mega Menu</a></li>
+                    <li><a class="nav-mobile-item" href="#">Blog</a></li>
+                    <li><a class="nav-mobile-item" href="#">Pages</a></li>
+                    <li><a class="nav-mobile-item" href="#">Language</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     <!-- Javascript -->
     <script src="./assets/javascript/search-dropdown.js"></script>
