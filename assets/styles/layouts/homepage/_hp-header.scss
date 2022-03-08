@@ -317,6 +317,22 @@
     }
 }
 
+.nav-mobile-button{
+    background-color: white;
+    border: none;
+    display: none;
+    flex-direction: column;
+    row-gap: 5px;
+    .nav-mobile-stick {
+        height: 2px;
+        width: 20px;
+        background-color: black;
+    }
+}
+.nav-mobile-active{
+    left: 0px !important;
+}
+
 .nav-mobile{
     width: 320px;
     position: absolute;
@@ -325,6 +341,7 @@
     height: 100vh;
     overflow-y: scroll;
     border-style: 1px solid $gray-light;
+    left: -320px;
     .nav-mobile-header{
         padding: 15px;
         display: flex;
@@ -375,7 +392,7 @@
             align-items: center;
             padding: 10px 0;
             column-gap: 10px;
-            color: $gray;
+            color: #253D4E;
             font-size: 14px;
             font-weight: 700;
             width: 250px;
@@ -384,32 +401,32 @@
                 color: $green;
             }
         }
-        .nav-mobile-hotline{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            column-gap: 10px;
-            .hotline-holder{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                p{
-                    font-size: 26px;
-                    font-weight: 700;
-                    color: $green;
-                    line-height: 1;
 
-                }
-                span{
-                    font-size: 12px;
-                    font-weight: 500;
-                    letter-spacing: 0.9px;
-                    color: $gray;
-                    line-height: 0.9;
-                }
-            }
+    }
+    .nav-mobile-info{
+        border: 1px solid $gray-light;
+        margin: 15px;
+        padding: 15px;
+        a{
+            color: #253D4E;
+            font-size: 14px;
+            line-height: 40px;
         }
+    }
+    .nav-mobile-social{
+        padding: 15px;
+        i{
+            padding: 5px 5px 5px 0;
+            color: $green;
+            font-size: 18px;   
+        }
+    }
+    .nav-mobile-copyright{
+        padding: 15px;
+        color: $gray;
+        font-size: 13px;
+        line-height: 20px;
+        margin: 30px 0;
     }
 }   
 
@@ -451,5 +468,8 @@
         p, button{
             display: none;
         }
+    }
+    .nav-mobile-button{
+        display: flex;
     }
 }
