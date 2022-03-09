@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+
+//header-top
+
 .header-top {
     padding: 10px;
     border-bottom: 1px solid $gray-light;
@@ -86,6 +89,8 @@
     }
 }
 
+//header-bottom
+
 .header-bottom{
     display: flex;
     align-items: center;
@@ -100,7 +105,6 @@
     display: flex;
     align-items: center;
     width: 700px;
-    // max-width: 700px;
     .search-dropdown-btn{
         position: relative;
         display: flex;
@@ -135,11 +139,6 @@
     form{
         margin-left: 10px;
         width: 100%;
-        // display: flex;
-        // align-items: center;
-        // justify-content: space-between;
-        // width: 100%;
-        // max-width: 400px;
     }
     .search{
         border: none;
@@ -150,8 +149,6 @@
         &:focus{
             outline: none;
         }
-        // width: 100%;
-        // max-width: 350px;
     }
     .search-btn{
         background-color: transparent;
@@ -225,6 +222,8 @@
     }
 }
 
+//header-nav
+
 .header-nav{
     display: flex;
     align-items: center;
@@ -257,6 +256,7 @@
     color: #253D4E;
     font-size: 16px;
     font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
     &:hover{
         color: $green;
     }
@@ -295,7 +295,6 @@
         }
     }
 }
-
 .nav-dropdown-content{
     position: absolute;
     display: flex;
@@ -311,11 +310,14 @@
         font-size: 14px;
         padding: 5px 15px;
         font-weight: 500;
+        font-family: 'Quicksand', sans-serif;
         &:hover{
             color: $green;
         }
     }
 }
+
+//nav-mobile
 
 .nav-mobile-button{
     background-color: white;
@@ -332,7 +334,6 @@
 .nav-mobile-active{
     left: 0px !important;
 }
-
 .nav-mobile{
     width: 320px;
     position: absolute;
@@ -429,6 +430,8 @@
         margin: 30px 0;
     }
 }   
+
+//queries
 
 @media screen and (max-width: 1320px){
     .search-container{
