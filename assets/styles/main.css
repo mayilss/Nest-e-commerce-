@@ -1572,4 +1572,248 @@ li {
 .hp-best-sells-card button i {
   margin-right: 5px;
 }
+
+.hp-deals {
+  padding: 15px;
+}
+
+.hp-deals-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hp-deals-nav h2 {
+  font-size: 32px;
+  font-family: 'Quicksand', sans-serif;
+  color: #253D4E;
+  font-weight: 700;
+}
+
+.hp-deals-nav a {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  color: #7E7E7E;
+  font-weight: 400;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hp-deals-nav a:hover {
+  color: #3BB77E;
+}
+
+.hp-deals-content {
+  margin-top: 30px;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+  margin-bottom: 150px;
+}
+
+.deals-banner1 {
+  background-image: url(../../../../assets/images/banner-5.png);
+}
+
+.deals-banner2 {
+  background-image: url(../../../../assets/images/banner-6.png);
+}
+
+.deals-banner3 {
+  background-image: url(../../../../assets/images/banner-7.png);
+}
+
+.deals-banner4 {
+  background-image: url(../../../../assets/images/banner-8.png);
+}
+
+.hp-deals-item {
+  height: 315px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.hp-deals-card {
+  margin-top: 165px;
+  z-index: 11;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hp-deals-card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.hp-deals-card .hp-deals-card-time-holder {
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 30px;
+}
+
+.hp-deals-card .hp-deals-card-time-holder .deals-time {
+  background-color: white;
+  border-radius: 5px;
+  height: 60px;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hp-deals-card .hp-deals-card-time-holder .deals-time span {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  color: #3BB77E;
+  font-weight: 700;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hp-deals-card .hp-deals-card-time-holder .deals-time span:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.hp-deals-card .hp-deals-card-time-holder .deals-time p {
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #7E7E7E;
+  font-weight: 400;
+}
+
+.hp-deals-card .hp-deals-card-content {
+  border-radius: 15px;
+  padding: 10px;
+  margin: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  z-index: 20;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.hp-deals-card .hp-deals-card-content h4 a {
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #253D4E;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hp-deals-card .hp-deals-card-content h4 a:hover {
+  color: #3BB77E;
+}
+
+.hp-deals-card .hp-deals-card-content .hp-product-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+}
+
+.hp-deals-card .hp-deals-card-content .hp-product-stars i {
+  color: orange;
+  font-size: 12px;
+}
+
+.hp-deals-card .hp-deals-card-content .hp-product-stars p {
+  margin-left: 5px;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #7E7E7E;
+}
+
+.hp-deals-card .hp-deals-card-content .productor {
+  font-size: 14px;
+  color: #ADADAD;
+  font-family: 'Lato', sans-serif;
+}
+
+.hp-deals-card .hp-deals-card-content .productor a {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  color: #3BB77E;
+  font-weight: 400;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hp-deals-card .hp-deals-card-content .productor a:hover {
+  color: orange;
+}
+
+.hp-deals-card .hp-deals-card-content .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.hp-deals-card .hp-deals-card-content .price p {
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  color: #3BB77E;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.hp-deals-card .hp-deals-card-content .price button {
+  border: none;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  color: #3BB77E;
+  background-color: #DEF9EC;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hp-deals-card .hp-deals-card-content .price button:hover {
+  background-color: #3BB77E;
+  color: white;
+}
+
+.hp-deals-card .hp-deals-card-content .price button i {
+  margin-right: 5px;
+}
 /*# sourceMappingURL=main.css.map */

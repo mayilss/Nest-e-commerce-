@@ -560,3 +560,176 @@
         }
     }
 }
+
+//Deals
+.hp-deals{
+    padding: 15px;
+}
+.hp-deals-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2{
+        font-size: 32px;
+        font-family: 'Quicksand', sans-serif;
+        color: $blue-dark;
+        font-weight: 700;
+    }
+    a{
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        color: $gray;
+        font-weight: 400;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            color: $green;
+        }
+    }
+    
+}
+.hp-deals-content{
+    margin-top: 30px;
+    column-gap: 25px;
+    margin-bottom: 150px;
+}
+.deals-banner1{
+    background-image: url(../../../../assets/images/banner-5.png);
+}
+.deals-banner2{
+    background-image: url(../../../../assets/images/banner-6.png);
+}
+.deals-banner3{
+    background-image: url(../../../../assets/images/banner-7.png);
+}
+.deals-banner4{
+    background-image: url(../../../../assets/images/banner-8.png);
+}
+.hp-deals-item{
+    height: 315px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+.hp-deals-card{
+    margin-top: 165px;
+    z-index: 11;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        transform: translateY(-5px);
+    }
+    .hp-deals-card-time-holder{
+        column-gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 30px;
+        .deals-time{
+            background-color: white;
+            border-radius: 5px;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            span{
+                font-size: 18px;
+                font-family: 'Lato', sans-serif;
+                color: $green;
+                font-weight: 700;
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    transform: translateY(-3px);
+                }
+            }
+            p{
+                font-size: 12px;
+                font-family: 'Lato', sans-serif;
+                color: $gray;
+                font-weight: 400;
+            }
+        }
+    }
+    .hp-deals-card-content{
+        border-radius: 15px;
+        padding: 10px;
+        margin: 25px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        z-index: 20;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        h4{
+            a{
+                font-size: 16px;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                color: $blue-dark;
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    color: $green;
+                }
+            }
+        }
+        .hp-product-stars{
+            display: flex;
+            margin-top: 15px;
+            i{
+                color: orange;
+                font-size: 12px;
+            }
+            p{
+                margin-left: 5px;
+                font-size: 12px;
+                font-family: 'Lato', sans-serif;
+                color: $gray;
+            }
+        }
+        .productor{
+            font-size: 14px;
+            color: #ADADAD;
+            font-family: 'Lato', sans-serif;
+            a{
+                font-size: 14px;
+                font-family: 'Lato', sans-serif;
+                color: $green;
+                font-weight: 400;
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    color: orange;
+                }
+            }
+        }
+        .price{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            p{
+                font-size: 18px;
+                font-family: 'Quicksand', sans-serif;
+                color: $green;
+                font-weight: 700;
+                margin-top: 15px;
+            }
+            button{
+                border: none;
+                font-size: 14px;
+                font-family: 'Lato', sans-serif;
+                color: $green;
+                background-color: #DEF9EC;
+                padding: 10px;
+                border-radius: 5px;
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    background-color: $green;
+                    color: white;
+                }
+                i{
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
