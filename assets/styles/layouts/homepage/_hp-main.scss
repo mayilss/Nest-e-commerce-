@@ -733,3 +733,139 @@
         }
     }
 }
+
+//Top Products
+.hp-top-products{
+    padding: 15px;
+    h2{
+        font-size: 24px;
+        font-family: 'Quicksand', sans-serif;
+        color: $blue-dark;
+        font-weight: 700;
+    }
+    .underline{
+        width: 100%;
+        height: 2px;
+        background-color: $gray-light;
+        margin: 15px 0;
+        div{
+            width: 25%;
+            height: 3px;
+            background-color: #BCE3C9;
+        }
+    }
+    img{
+        width: 100px;
+        border-radius: 5px;
+    }
+}
+.hp-top-prods-item{
+    display: flex;
+    column-gap: 15px;
+    margin: 25px 0;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        transform: translateY(-5px);
+    }
+    h4{
+        a{
+            font-size: 16px;
+            font-family: 'Quicksand', sans-serif;
+            color: $blue-dark;
+            font-weight: 700;
+            margin-bottom: 10px;
+            &:hover{
+            color: $green;
+        }
+        }
+    }
+    .hp-product-stars{
+        display: flex;
+        i{
+            color: orange;
+            font-size: 12px;
+        }
+        p{
+            margin-left: 5px;
+            font-size: 12px;
+            font-family: 'Lato', sans-serif;
+            color: $gray;
+        }
+    }
+    .price{
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        color: $green;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+}
+
+//Banner Bottom
+.hp-banner-bottom{
+    background-image: url(../../../../assets/images/banner-10.png);
+    min-height: 230px;
+    margin: 15px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 84px 78px;
+    img{
+        position: absolute;
+        bottom: 0;
+        right: 45px;
+        max-width: 40%;
+    }
+    h3{
+        font-size: 40px;
+        font-family: 'Quicksand', sans-serif;
+        color: $blue-dark;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+        color: $gray;
+        font-weight: 400;
+        margin-bottom: 40px;
+        span{
+            color: $green;
+        }
+    }
+    form{
+        background-color: white;
+        border-radius: 35px;
+        max-width: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        i{
+            padding-left: 20px;
+        }
+        input{
+            border: none;
+            border-radius: 35px;
+            padding: 15px;
+            font-size: 18px;
+            font-family: 'Lato', sans-serif;
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            background-color: $green;
+            border: none;
+            border-radius: 35px;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
