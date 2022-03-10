@@ -5,8 +5,14 @@ $(function(){
         nav:true,
         dots:false,
         responsive:{
-            0:{
+            1440:{
                 items:10
+            },
+            1024:{
+                items:6
+            },
+            768:{
+                items:4
             }
         }
     });

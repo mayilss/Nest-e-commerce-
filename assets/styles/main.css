@@ -322,6 +322,7 @@ li {
   height: 300px;
   overflow-y: scroll;
   border-radius: 5px;
+  z-index: 11;
 }
 
 .search-container .search-dropdown-content input {
@@ -473,6 +474,11 @@ li {
           justify-content: space-between;
   padding: 15px;
   border-bottom: 1px solid #ececec;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 12;
+  background-color: white;
 }
 
 .nav-dropdown-btn {
@@ -1207,14 +1213,15 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid #3BB77E;
+  border: 1px solid #ececec;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 .hp-product-card:hover {
-  -webkit-box-shadow: 5px 10px 18px #888888;
-          box-shadow: 5px 10px 18px #888888;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid #3BB77E;
 }
 
 .hp-product-card:hover .product-img {
@@ -1345,6 +1352,224 @@ li {
 }
 
 .hp-product-card .price button i {
+  margin-right: 5px;
+}
+
+.hp-best-sells {
+  padding: 15px;
+}
+
+.hp-best-sells .hp-best-sells-banner {
+  background-image: url(../../../../assets/images/banner-4.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 520px;
+  width: 355px;
+  border-radius: 15px;
+  margin: 50px 0 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hp-best-sells .hp-best-sells-banner h4 {
+  font-size: 40px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #253D4E;
+  margin: 50px 0 100px 50px;
+}
+
+.hp-best-sells .hp-best-sells-banner a {
+  margin: 0 0 0 50px;
+  width: 100px;
+  font-size: 12px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-weight: 600;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: #3BB77E;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hp-best-sells .hp-best-sells-banner a i {
+  margin-left: 8px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hp-best-sells .hp-best-sells-banner a:hover {
+  background-color: orange;
+  padding-right: 15px;
+}
+
+.hp-best-sells .hp-best-sells-banner a:hover i {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+}
+
+.hp-best-sells .hp-best-sells-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hp-best-sells-carousel {
+  width: calc(100% - 400px);
+  margin-left: 15px;
+  margin-top: 30px;
+}
+
+.hp-best-sells-card {
+  overflow: hidden;
+  position: relative;
+  height: 520px;
+  border-radius: 15px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #ececec;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hp-best-sells-card:hover {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid #3BB77E;
+}
+
+.hp-best-sells-card:hover .product-img {
+  opacity: 0;
+  -webkit-transform: scale3d(1.05, 1.05, 1.05) translateZ(0);
+          transform: scale3d(1.05, 1.05, 1.05) translateZ(0);
+}
+
+.hp-best-sells-card span {
+  position: absolute;
+  padding: 5px 20px;
+  top: 0;
+  left: 0;
+  background-color: #f74b81;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  z-index: 11;
+}
+
+.hp-best-sells-card .product-img {
+  width: 225px;
+  z-index: 10;
+}
+
+.hp-best-sells-card .hover-img {
+  position: absolute;
+  width: 225px;
+}
+
+.hp-best-sells-card a {
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #ADADAD;
+  font-weight: 400;
+  margin-top: 15px;
+  z-index: 11;
+}
+
+.hp-best-sells-card h4 a {
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #253D4E;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hp-best-sells-card h4 a:hover {
+  color: #3BB77E;
+}
+
+.hp-best-sells-card .hp-product-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+}
+
+.hp-best-sells-card .hp-product-stars i {
+  color: orange;
+  font-size: 12px;
+}
+
+.hp-best-sells-card .price {
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  color: #3BB77E;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.hp-best-sells-card .stocks-graphic {
+  width: 100%;
+  height: 5px;
+  background-color: #ececec;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.hp-best-sells-card .stocks-graphic div {
+  width: 70%;
+  height: 5px;
+  background-color: #3BB77E;
+  border-radius: 5px;
+}
+
+.hp-best-sells-card .stocks-numeral {
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.hp-best-sells-card button {
+  border: none;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  background-color: #3BB77E;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hp-best-sells-card button:hover {
+  background-color: orange;
+  color: white;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.hp-best-sells-card button i {
   margin-right: 5px;
 }
 /*# sourceMappingURL=main.css.map */

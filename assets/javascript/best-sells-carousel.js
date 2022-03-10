@@ -1,0 +1,13 @@
+$(function(){
+    $('.hp-best-sells-carousel').owlCarousel({
+        loop:true,
+        margin:15,
+        nav:true,
+        dots:false,
+        responsive:{
+            0:{
+                items:4
+            }
+        }
+    });
+});
