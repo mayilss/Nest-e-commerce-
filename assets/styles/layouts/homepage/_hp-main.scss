@@ -869,3 +869,40 @@
         }
     }
 }
+
+//bottom cards
+
+.hp-bottom-cards{
+    padding: 15px;
+    column-gap: 20px;
+    .hp-bottom-card{
+        display: flex;
+        align-items: center;
+        background-color: $gray-light;
+        column-gap: 15px;
+        border-radius: 10px;
+        padding: 20px;
+        &:hover{
+            img{
+                transform: translateY(-5px);
+            }
+        }
+        img{
+            width: 60px;
+            transition: 0.3s ease-in-out;
+        }
+        h4{
+            font-size: 18px;
+            font-family: 'Quicksand', sans-serif;
+            color: $blue-dark;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            color: $gray;
+            font-weight: 500;
+        }
+    }
+}
