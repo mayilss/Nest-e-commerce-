@@ -802,20 +802,20 @@
         color: $blue-dark;
         font-weight: 700;
     }
-    .underline{
-        width: 100%;
-        height: 2px;
-        background-color: $gray-light;
-        margin: 15px 0;
-        div{
-            width: 25%;
-            height: 3px;
-            background-color: #BCE3C9;
-        }
-    }
     img{
         width: 100px;
         border-radius: 5px;
+    }
+}
+.underline{
+    width: 100%;
+    height: 2px;
+    background-color: $gray-light;
+    margin: 15px 0;
+    div{
+        width: 25%;
+        height: 3px;
+        background-color: #BCE3C9;
     }
 }
 .hp-top-prods-item{
