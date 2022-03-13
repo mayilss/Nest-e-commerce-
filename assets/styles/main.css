@@ -3299,4 +3299,175 @@ aside {
 .aside-banner p span {
   color: #3BB77E;
 }
+
+.account-content-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.account-content-holder img {
+  width: 465px;
+  border-radius: 10px;
+}
+
+.account-content-holder form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+
+.account-content-holder form h1 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Quicksand', sans-serif;
+  color: #253D4E;
+}
+
+.account-content-holder form p {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  color: #7E7E7E;
+  margin-right: 200px;
+  margin-bottom: 40px;
+}
+
+.account-content-holder form p a {
+  color: #3BB77E;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.account-content-holder form p a:hover {
+  color: orange;
+}
+
+.account-content-holder form input {
+  background: #fff;
+  border: 1px solid #ececec;
+  height: 64px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-left: 20px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.account-content-holder form .security-code-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-content-holder form .security-code-holder input {
+  width: 50%;
+}
+
+.account-content-holder form .security-code-holder span {
+  border-radius: 10px;
+  height: 64px;
+  line-height: 64px;
+  padding: 0 40px;
+  font-size: 24px;
+  font-weight: 700;
+  background: #BCE3C9;
+  font-family: 'Lato', sans-serif;
+}
+
+.account-content-holder form .security-code-holder span b:first-child {
+  color: #3BB77E;
+}
+
+.account-content-holder form .security-code-holder span b:last-child {
+  color: orange;
+}
+
+.account-content-holder form .security-code-holder span b:nth-child(2) {
+  color: palevioletred;
+}
+
+.account-content-holder form .security-code-holder span b:nth-child(3) {
+  color: turquoise;
+}
+
+.account-content-holder form .remember-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-content-holder form .remember-me div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-content-holder form .remember-me div input {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.account-content-holder form .remember-me div label {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  color: #7E7E7E;
+  cursor: pointer;
+}
+
+.account-content-holder form .remember-me a {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  color: #7E7E7E;
+}
+
+.account-content-holder form button {
+  margin-top: 40px;
+  background-color: #253D4E;
+  padding: 15px 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  width: 130px;
+  border: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.account-content-holder form button:hover {
+  background-color: #3BB77E;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
 /*# sourceMappingURL=main.css.map */

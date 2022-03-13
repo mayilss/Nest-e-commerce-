@@ -1,0 +1,117 @@
+.account-content-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    img{
+        width: 465px;
+        border-radius: 10px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        h1{
+            font-size: 48px;
+            font-weight: 700;
+            font-family: 'Quicksand', sans-serif;
+            color: $blue-dark;
+        }
+        p{
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            color: $gray;
+            margin-right: 200px;
+            margin-bottom: 40px;
+            a{
+                color: $green;
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    color: orange;
+                }
+            }
+        }
+        input{
+            background: #fff;
+            border: 1px solid #ececec;
+            height: 64px;
+            box-shadow: none;
+            padding-left: 20px;
+            font-size: 16px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .security-code-holder{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            input{
+                width: 50%;
+            }
+            span{
+                border-radius: 10px;
+                height: 64px;
+                line-height: 64px;
+                padding: 0 40px;
+                font-size: 24px;
+                font-weight: 700;
+                background: #BCE3C9;
+                font-family: 'Lato', sans-serif;
+                b:first-child{
+                    color: $green;
+                }
+                b:last-child{
+                    color: orange;
+                }
+                b:nth-child(2){
+                    color: palevioletred;
+                }
+                b:nth-child(3){
+                    color: turquoise;
+                }
+            }
+        }
+        .remember-me{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div{
+                display: flex;
+                align-items: center;
+                input{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                label{
+                    font-size: 14px;
+                    font-family: 'Lato', sans-serif;
+                    color: $gray;
+                    cursor: pointer;
+                }
+            }
+            a{
+                font-size: 14px;
+                font-family: 'Lato', sans-serif;
+                color: $gray;
+            }
+        }
+        button{
+            margin-top: 40px;
+            background-color: $blue-dark;
+            padding: 15px 40px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            color: #fff;
+            width: 130px;
+            border: none;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                background-color: $green;
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
