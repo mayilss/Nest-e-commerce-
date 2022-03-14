@@ -1,0 +1,150 @@
+.myAcc-content{
+    display: flex;
+    h1{
+        font-size: 32px;
+        font-weight: 700;
+        color: $blue-dark;
+        margin-bottom: 20px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    h2{
+        font-size: 20px;
+        font-weight: 700;
+        color: $blue-dark;
+        margin-bottom: 20px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    a{
+        color: $green;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            color: orange;
+        }
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        color: $gray;
+        font-family: 'Lato', sans-serif;
+    }
+    label{
+        font-size: 14px;
+        font-weight: 400;
+        color: $gray;
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 5px;
+    }
+    input{
+        border: 1px solid #ececec;
+        border-radius: 10px;
+        height: 64px;
+        box-shadow: none;
+        padding-left: 20px;
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    button{
+        font-size: 17px;
+        font-weight: 500;
+        padding: 20px 40px;
+        color: #ffffff;
+        border: none;
+        background-color: #253D4E;
+        border-radius: 10px;
+        font-family: "Quicksand", sans-serif;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            background-color: $green;
+        }
+    }
+}
+.myAcc-tabs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    li{
+        padding: 15px 30px;
+        border-radius: 10px;
+        border: 1px solid $gray-light;
+        font-size: 16px;
+        font-weight: 600;
+        color: $gray;
+        cursor: pointer;
+        font-family: 'Quicksand', sans-serif;
+        i{
+            margin-right: 10px;
+        }
+    }
+}
+#dashboard{
+    flex-direction: column;
+    padding: 20px 200px 50px 50px;
+    
+}
+#orders{
+    flex-direction: column;
+    padding: 20px  0 0 50px;
+    table{
+        border: 1px solid $gray-light;
+        width: 100%;
+        td, th{
+            padding: 10px;
+        }
+        th{
+            font-size: 17px;
+            font-weight: 700;
+            font-family: 'Quicksand', sans-serif;
+        }
+        td{
+            border-top: 1px solid $gray-light;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: 'Lato', sans-serif;
+        }
+    }
+}
+#track-order{
+    flex-direction: column;
+    padding: 20px  0 0 50px;
+    row-gap: 20px;
+}
+#acc-details{
+    flex-direction: column;
+}
+#address{
+    justify-content: space-around;
+    align-items: center;
+    .address-holder{
+        padding: 20px 0 0 50px;
+    }
+}
+#acc-details{
+    padding: 20px 0 0 50px;
+    p{
+        margin-bottom: 20px;
+    }
+    form{
+        div:first-child{
+            display: flex;
+            div{
+                display: block;
+                &:first-child{
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+[data-tab-content]{
+    display: none;
+}
+.active-tab-content[data-tab-content]{
+    display: flex !important;
+}
+
+.active-tab{
+    background-color: $green;
+    color: white !important;
+}

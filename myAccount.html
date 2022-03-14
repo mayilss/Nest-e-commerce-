@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- W3 CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"/>
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/styles/layouts/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/styles/layouts/owl-carousel/owl.theme.default.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+    <header class="homepage-header container-fluid">
+        <div class="header-bottom container-fluid">
+            <button class="nav-mobile-button">
+                <div class="nav-mobile-stick"></div>
+                <div class="nav-mobile-stick"></div>
+                <div class="nav-mobile-stick"></div>
+            </button>
+            <img width="180px" src="./assets/images/logo.svg" alt="">
+            <div class="search-container">
+                <div class="w3-dropdown-click search-dropdown">
+                    <a class="search-dropdown-btn">All Categories<i class="fa-solid fa-angle-down"></i></a>
+                    <div class="search-dropdown-content w3-dropdown-content w3-bar-block w3-border">
+                        <input type="text">
+                        <ul>
+                            <li><a href="#" class="w3-bar-item w3-button">All Categories</a></li>
+                            <li><a href="#" class="w3-bar-item w3-button">Milks and Diaries</a></li>
+                            <li><a href="#" class="w3-bar-item w3-button">Wines & Alcohol</a></li>
+                            <li><a href="#" class="w3-bar-item w3-button">Clothing & Beauty</a></li>
+                            <li><a href="#" class="w3-bar-item w3-button">Pet Foods & Toy</a></li>
+                            <li><a href="#" class="w3-bar-item w3-button">Fast Food</a></li>
+                            <li><a href="#" class="w3-bar-item w3-button">Baking Material</a></li>
+                            <li><a href="#" class="w3-bar-item w3-button">Vegetables</a></li>
+                            <li><a href="#" class="w3-bar-item w3-button">Fresh Seafood</a></li>
+                            <li><a href="#" class="w3-bar-item w3-button">Noodles & Rice</a></li>
+                            <li><a href="#" class="w3-bar-item w3-button">Ice Cream</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-holder">
+                    <form action="">
+                        <input class="search" type="text" placeholder="Search for items...">
+                        <button class="search-btn" type="submit"><i class="fa-solid fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="header-bottom-right">
+                <div class="header-bottom-item">
+                    <img src="./assets/images/icon-compare.svg" alt="">
+                    <span>0</span>
+                    <p>Compare</p>
+                </div>
+                <div class="header-bottom-item">
+                    <img src="./assets/images/icon-heart.svg" alt="">
+                    <span>0</span>
+                    <p>Wishlist</p>
+                </div>
+                <div class="header-bottom-item">
+                    <img src="./assets/images/icon-cart.svg" alt="">
+                    <span>0</span>
+                    <button id="cart" class="cart-dropdown-btn">Cart</button>
+                </div>
+                <div class="header-bottom-item account-holder">
+                    <img src="./assets/images/icon-user.svg" alt="">
+                    <button id="account" class="account-dropdown-btn">Account</button>
+                    <div class="account-dropdown-content">
+                        <ul>
+                            <li><a href="#"><i class="fa-regular fa-user"></i>My Account</a></li>
+                            <li><a href="#"><i class="fa-solid fa-location-dot"></i>Order Tracking</a></li>
+                            <li><a href="#"><i class="fa-solid fa-tag"></i>My Voucher</a></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i>My Wishlist</a></li>
+                            <li><a href="#"><i class="fa-solid fa-sliders"></i>Settings</a></li>
+                            <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <div class="nav-mobile">
+            <div class="nav-mobile-header">
+                <img width="140px" src="./assets/images/logo.svg" alt="">
+                <a href="#" class="nav-mobile-close-btn"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <form class="nav-mobile-search" action="">
+                <input type="text" placeholder="Search for items...">
+                <button type="submit"><i class="fa-solid fa-search"></i></button>
+            </form>
+            <div class="nav-mobile-content">
+                <ul>
+                    <li><a class="nav-mobile-item" href="#">Home</a></li>
+                    <li><a class="nav-mobile-item" href="#">Shop</a></li>
+                    <li><a class="nav-mobile-item" href="#">Vendors</a></li>
+                    <li><a class="nav-mobile-item" href="#">Mega Menu</a></li>
+                    <li><a class="nav-mobile-item" href="#">Blog</a></li>
+                    <li><a class="nav-mobile-item" href="#">Pages</a></li>
+                    <li><a class="nav-mobile-item" href="#">Language</a></li>
+                </ul>
+            </div>
+            <div class="nav-mobile-info">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="#">Our location</a> <br>
+                <i class="fa-solid fa-user"></i>
+                <a href="#">Log In/ Sign Up</a><br>
+                <i class="fa-solid fa-headphones-simple"></i>
+                <a href="#">(+01) - 2345 - 6789 </a>
+            </div>
+            <div class="nav-mobile-social">
+                <p>Follow Us</p>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p class="nav-mobile-copyright">Copyright 2021 © Nest. All rights reserved. Powered by AliThemes.</p>
+        </div>
+    </header>
+    <nav class="header-nav container-fluid">
+        <div class="nav-dropdown">
+            <a class="nav-dropdown-btn"><i class="fi fi-rr-apps"></i>Browse All Categories<i class="fa-solid fa-angle-down"></i></a>
+            <div class="nav-dropdown-btn-content">
+                <ul>
+                    <li><img src="./assets/images/category-1.svg" alt=""><a href="#">Milks and Dairies</a></li>
+                    <li><img src="./assets/images/category-2.svg" alt=""><a href="#">Clothing & beauty</a></li>
+                    <li><img src="./assets/images/category-3.svg" alt=""><a href="#">Pet Foods & Toy</a></li>
+                    <li><img src="./assets/images/category-4.svg" alt=""><a href="#">Baking material</a></li>
+                    <li><img src="./assets/images/category-5.svg" alt=""><a href="#">Fresh Fruit</a></li>
+                    <li><img src="./assets/images/category-1.svg" alt=""><a href="#">Milks and Dairies</a></li>
+                    <li><img src="./assets/images/category-2.svg" alt=""><a href="#">Clothing & beauty</a></li>
+                </ul>
+                <ul>
+                    <li><img src="./assets/images/category-3.svg" alt=""><a href="#">Wines & Drinks</a></li>
+                    <li><img src="./assets/images/category-4.svg" alt=""><a href="#">Fresh Seafood</a></li>
+                    <li><img src="./assets/images/category-5.svg" alt=""><a href="#">Fast food</a></li>
+                    <li><img src="./assets/images/category-1.svg" alt=""><a href="#">Vegetables</a></li>
+                    <li><img src="./assets/images/category-2.svg" alt=""><a href="#">Bread and Juice</a></li>
+                    <li><img src="./assets/images/category-3.svg" alt=""><a href="#">Wines & Drinks</a></li>
+                    <li><img src="./assets/images/category-4.svg" alt=""><a href="#">Fresh Seafood</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="nav-hotDeals nav-item"><img src="./assets/images/icon-hot.svg" alt="">Hot Deals</a>
+        <div class="nav-dropdown-holder">
+            <a href="#" class="nav-home nav-item">Home<i class="fa-solid fa-angle-down"></i></a>
+            <div class="nav-dropdown-content">
+                <a href="#" class="nav-dropdown-item">Home 1</a>
+                <a href="#" class="nav-dropdown-item">Home 2</a>
+                <a href="#" class="nav-dropdown-item">Home 3</a>
+                <a href="#" class="nav-dropdown-item">Home 4</a>
+                <a href="#" class="nav-dropdown-item">Home 5</a>
+                <a href="#" class="nav-dropdown-item">Home 6</a>
+            </div>
+        </div>
+        <a href="#" class="nav-about nav-item">About</a>
+        <div class="nav-dropdown-holder">
+            <a href="#" class="nav-shop nav-item">Shop<i class="fa-solid fa-angle-down"></i></a>
+            <div class="nav-dropdown-content">
+                <a href="#" class="nav-dropdown-item">Shop Grid - Right Sidebar</a>
+                <a href="#" class="nav-dropdown-item">Shop Grid - Left Sidebar</a>
+                <a href="#" class="nav-dropdown-item">Shop List - Right Sidebar</a>
+                <a href="#" class="nav-dropdown-item">Shop List - Left Sidebar</a>
+                <a href="#" class="nav-dropdown-item">Shop - Wide</a>
+                <a href="#" class="nav-dropdown-item">Single Product</a>
+                <a href="#" class="nav-dropdown-item">Shop - Filter</a>
+                <a href="#" class="nav-dropdown-item">Shop - Wishlist</a>
+                <a href="#" class="nav-dropdown-item">Shop - Cart</a>
+
+                <a href="#" class="nav-dropdown-item">Shop - Checkout</a>
+                <a href="#" class="nav-dropdown-item">Shop - Compare</a>
+                <a href="#" class="nav-dropdown-item">Shop Invoice</a>
+            </div>
+        </div>
+        <div class="nav-dropdown-holder">
+            <a href="#" class="nav-home nav-item">Vendors<i class="fa-solid fa-angle-down"></i></a>
+            <div class="nav-dropdown-content">
+                <a href="#" class="nav-dropdown-item">Vendors Grid</a>
+                <a href="#" class="nav-dropdown-item">Vendors List</a>
+                <a href="#" class="nav-dropdown-item">Vendor Details 01</a>
+                <a href="#" class="nav-dropdown-item">Vendor Details 02</a>
+                <a href="#" class="nav-dropdown-item">Vendor Dashboard</a>
+                <a href="#" class="nav-dropdown-item">Vendor Guide</a>
+            </div>
+        </div>
+        <div class="nav-dropdown-holder">
+            <a href="#" class="nav-megaMenu nav-item">Mega Menu<i class="fa-solid fa-angle-down"></i></a>
+            <div class="nav-mega-dropdown-content">
+                <div class="mega-dropdown-content-column">
+                    <h3>Fruit & Vegetables</h3>
+                    <ul>
+                        <li><a class="nav-dropdown-item" href="#">Meat & Poultry</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Fresh Vegetables</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Herbs & Seasonings</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Cuts & Sprouts</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Exotic Fruits & Veggies</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Packaged Produce</a></li>
+                    </ul>
+                </div>
+                <div class="mega-dropdown-content-column">
+                    <h3>Fruit & Vegetables</h3>
+                    <ul>
+                        <li><a class="nav-dropdown-item" href="#">Meat & Poultry</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Fresh Vegetables</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Herbs & Seasonings</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Cuts & Sprouts</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Exotic Fruits & Veggies</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Packaged Produce</a></li>
+                    </ul>
+                </div>
+                <div class="mega-dropdown-content-column">
+                    <h3>Fruit & Vegetables</h3>
+                    <ul>
+                        <li><a class="nav-dropdown-item" href="#">Meat & Poultry</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Fresh Vegetables</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Herbs & Seasonings</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Cuts & Sprouts</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Exotic Fruits & Veggies</a></li>
+                        <li><a class="nav-dropdown-item" href="#">Packaged Produce</a></li>
+                    </ul>
+                </div>
+                <div class="mega-dropdown-content-img">
+                    <p>HOT DEALS</p>
+                    <h5>Don't miss <br> Trending</h5>
+                    <h6>Save to 50%</h6>
+                    <a href="#">Shop now</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-dropdown-holder">
+            <a href="#" class="nav-home nav-item">Blog<i class="fa-solid fa-angle-down"></i></a>
+            <div class="nav-dropdown-content">
+                <a href="#" class="nav-dropdown-item">Blog Category Grid</a>
+                <a href="#" class="nav-dropdown-item">Blog Category List</a>
+                <a href="#" class="nav-dropdown-item">Blog Category Big</a>
+                <a href="#" class="nav-dropdown-item">Blog Category Wide</a>
+                <a href="#" class="nav-dropdown-item">Single Post</a>
+            </div>
+        </div>
+        <div class="nav-dropdown-holder">
+            <a href="#" class="nav-home nav-item">Pages<i class="fa-solid fa-angle-down"></i></a>
+            <div class="nav-dropdown-content">
+                <a href="#" class="nav-dropdown-item">About Us</a>
+                <a href="#" class="nav-dropdown-item">Contact</a>
+                <a href="#" class="nav-dropdown-item">My Account</a>
+                <a href="#" class="nav-dropdown-item">Login</a>
+                <a href="#" class="nav-dropdown-item">Register</a>
+                <a href="#" class="nav-dropdown-item">Purchase Guide</a>
+                <a href="#" class="nav-dropdown-item">Privacy Policy</a>
+                <a href="#" class="nav-dropdown-item">Terms of Service</a>
+                <a href="#" class="nav-dropdown-item">404 Page</a>
+            </div>
+        </div>
+        <a href="#" class="nav-contact nav-item">Contact</i></a>
+        <div class="nav-hotline">
+            <img src="./assets/images/icon-headphone.svg" alt="">
+            <div class="hotline-holder">
+                <p>1900 - 888</p>
+                <span>24/7 Support Center</span> 
+            </div>
+        </div>
+    </nav>
+    <div class="path">
+        <a href="./index.html"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="#"><i class="fa-solid fa-angle-right"></i>Pages</a>
+        <a href="#"><i class="fa-solid fa-angle-right"></i>Login</a>
+    </div>
+    <main>
+        <div class="myAcc-content container">
+            <div class="myAcc-tab-holder col-3">
+                <ul class="myAcc-tabs">
+                    <li class="active-tab" data-tab-target="#dashboard"><i class="fa-solid fa-sliders"></i>Dashboard</li>
+                    <li data-tab-target="#orders"><i class="fa-solid fa-bag-shopping"></i>Orders</li>
+                    <li data-tab-target="#track-order"><i class="fa-solid fa-cart-arrow-down"></i>Track Your Order</li>
+                    <li data-tab-target="#address"><i class="fa-solid fa-location-dot"></i>My Address</li>
+                    <li data-tab-target="#acc-details"><i class="fa-solid fa-user"></i>Account Details</li>
+                    <li><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</li>
+                </ul>
+            </div>
+            <div class="myAcc-tab-content-holder col-9">
+                <div class="active-tab-content" id="dashboard" data-tab-content>
+                    <h1>Hello Rosie!</h1>
+                    <p>From your account dashboard. you can easily check & view your <a href="#">recent orders</a> ,
+                        manage your <a href="#">shipping and billing addresses</a>  and <a href="#">edit your password and account details</a>.</p>
+                </div>
+                <div id="orders" data-tab-content>
+                    <h1>Your Orders</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Total</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1735</td>
+                                <td>Aug 23, 2018</td>
+                                <td>Pending</td>
+                                <td>$265.00</td>
+                                <td><a href="#">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>#1735</td>
+                                <td>Aug 23, 2018</td>
+                                <td>Pending</td>
+                                <td>$265.00</td>
+                                <td><a href="#">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>#1735</td>
+                                <td>Aug 23, 2018</td>
+                                <td>Pending</td>
+                                <td>$265.00</td>
+                                <td><a href="#">View</a></td>
+                            </tr>
+                    </table>
+                </div>
+                <div id="track-order" data-tab-content>
+                    <h1>Orders tracking</h1>
+                    <p>To track your order please enter your OrderID in the box below and press "Track" button. This was given to you on your receipt and in the confirmation email you should have received.</p>
+                    <form action="">
+                            <label for="">Order ID</label>
+                            <input type="text" class="form-control" placeholder="Enter your Order ID">
+                            <label for="">Billing email</label>
+                            <input type="text" class="form-control" placeholder="Enter your email address">
+                            <button>Track</button>
+                    </form>
+                </div>
+                <div id="address" data-tab-content>
+                    <div class="address-holder">
+                        <h1>Billing Address</h1>
+                        <p>3522 Interstate</p>
+                        <p>75 Business Spur,</p>
+                        <p>Sault Ste.</p>
+                        <p>Marie, MI 49783</p>
+                        <p>New York</p>
+                        <a href="#">Edit</a>
+                    </div>
+                    <div class="address-holder">
+                        <h2>Shipping Address</h2>
+                        <p>3522 Interstate</p>
+                        <p>75 Business Spur,</p>
+                        <p>Sault Ste.</p>
+                        <p>Marie, MI 49783</p>
+                        <p>New York</p>
+                        <a href="#">Edit</a>
+                    </div>                    
+                </div>
+                <div id="acc-details" data-tab-content>
+                    <h2>Account Details</h2>
+                    <p>Already have an account? <a href="#">Log in instead!</a></p>
+                    <form action="">
+                        <div>
+                            <div class="col">
+                                <label for="">First Name</label>
+                                <input type="text">
+                            </div>
+                            <div class="col">
+                                <label for="">Last Name</label>
+                                <input type="text">
+                            </div>
+                        </div>                       
+                        <div>
+                            <label for="">Display Name</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label for="">Email Address</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label for="">Current Password</label>
+                            <input type="password">
+                        </div>
+                        <div>
+                            <label for="">New Password</label>
+                            <input type="password">
+                        </div>
+                        <div>
+                            <label for="">Confirm New Password</label>
+                            <input type="password">
+                        </div>
+                        <button class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>      
+    </main>
+
+
+    <div class="hp-banner-bottom">
+        <img src="./assets/images/banner-9.png" alt="">
+        <h3>Stay home & get your daily <br> needs from our shop</h3>
+        <p>Start You'r Daily Shopping with <span>Nest Mart</span></p>
+        <form action="">
+            <i class="fa-solid fa-paper-plane"></i>
+            <input type="text" placeholder="Enter your email address">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    <div class="hp-bottom-cards row">
+        <div class="hp-bottom-card col">
+            <img src="./assets/images/icon-1.svg" alt="">
+            <div>
+                <h4>Best prices & <br> offers</h4>
+                <p>Orders $50 or more</p>
+            </div>
+        </div>
+        <div class="hp-bottom-card col">
+            <img src="./assets/images/icon-2.svg" alt="">
+            <div>
+                <h4>Free delivery</h4>
+                <p>24/7 amazing services</p>
+            </div>
+        </div>
+        <div class="hp-bottom-card col">
+            <img src="./assets/images/icon-3.svg" alt="">
+            <div>
+                <h4>Great daily deal</h4>
+                <p>When you sign up</p>
+            </div>
+        </div> 
+        <div class="hp-bottom-card col">
+            <img src="./assets/images/icon-4.svg" alt="">
+            <div>
+                <h4>Wide assortment</h4>
+                <p>Mega Discounts</p>
+            </div>
+        </div>
+        <div class="hp-bottom-card col">
+            <img src="./assets/images/icon-5.svg" alt="">
+            <div>
+                <h4>Easy returns</h4>
+                <p>Within 30 days</p>
+            </div>
+        </div> 
+    </div>
+    <footer class="container-fluid">
+        <div class="footer-top row">
+            <div class="nest-info col">
+                <img src="./assets/images/logo.svg" alt="">
+                <p><i class="fa-solid fa-location-dot"></i><span>Address:</span> 5171 W Campbell Ave undefined Kent, Utah 53127 United States</p>
+                <p><i class="fa-solid fa-headphones-simple"></i><span>Call Us:</span> (+91) - 540-025-124553</p>
+                <p><i class="fa-solid fa-paper-plane"></i><span>Email:</span> sale@Nest.com</p>
+                <p><i class="fa-solid fa-clock"></i><span>Hours:</span> 10:00 - 18:00, Mon - Sat</p>
+                <h2>Install App</h2>
+                <p>From App Store or Google Play</p>
+                <div class="apple-google-holder">
+                    <img src="./assets/images/app-store.jpg" alt="">
+                    <img src="./assets/images/google-play.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img width="225px" src="./assets/images/payment-method.png" alt="">
+            </div>
+            <div class="footer-links company-links col">
+                <h2>Company</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class=" footer-links account-links col">
+                <h2>Account</h2>
+                <ul>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">View Cart</a></li>
+                    <li><a href="#">My Wishlist</a></li>
+                    <li><a href="#">Track My Order</a></li>
+                    <li><a href="#">Help Ticket</a></li>
+                    <li><a href="#">Shipping Details</a></li>
+                    <li><a href="#">Compare products</a></li>
+                </ul>
+            </div>
+            <div class="footer-links corporate-links col">
+                <h2>Corporate</h2>
+                <ul>
+                    <li><a href="#">Become a Vendor</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Farm Business</a></li>
+                    <li><a href="#">Farm Careers</a></li>
+                    <li><a href="#">Our Suppliers</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Promotions</a></li>
+                </ul>
+            </div>
+            <div class="footer-links popular-links col">
+                <h2>Popular</h2>
+                <ul>
+                    <li><a href="#">Milk & Flavoured Milk</a></li>
+                    <li><a href="#">Butter and Margarine</a></li>
+                    <li><a href="#">Eggs Substitutes</a></li>
+                    <li><a href="#">Marmalades</a></li>
+                    <li><a href="#">Sour Cream and Dips</a></li>
+                    <li><a href="#">Tea & Kombucha</a></li>
+                    <li><a href="#">Cheese</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2021, <span>Nest</span> - HTML Ecommerce Template <br> All rights reserved</p>
+            <div class="footer-hotline">
+                <div class="footer-hotline-part">
+                    <img src="./assets/images/phone-call.svg" alt="">
+                    <div>
+                        <p class="footer-hotline-number">1900 - 6666</p>
+                        <p class="footer-hotline-text">Working 8:00 - 22:00</p>
+                    </div>
+                </div>
+                <div class="footer-hotline-part">
+                    <img src="./assets/images/phone-call.svg" alt="">
+                    <div>
+                        <p class="footer-hotline-number">1900 - 8888</p>
+                        <p class="footer-hotline-text">24/7 Support Center</p>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-social">
+                Follow Us
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </p>
+        </div>
+    </footer>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Owl Carousel -->
+    <script src="./assets/javascript/owl.carousel.min.js"></script>
+    <!-- Javascript -->
+    <script src="./assets/javascript/search-dropdown.js"></script>
+    <script src="./assets/javascript/nav-mobile.js"></script>
+    <script src="./assets/javascript/banner.js"></script>
+    <script src="./assets/javascript/categories-carousel.js"></script>
+    <script src="./assets/javascript/best-sells-carousel.js"></script>
+    <script src="./assets/javascript/nav-dropdown.js"></script>
+    <script src="./assets/javascript/welcome-carousel.js"></script>
+    <script src="./assets/javascript/shop-dropdown.js"></script>
+    <script src="./assets/javascript/myAcc-tabs.js"></script>
+</body>
+</html>
