@@ -1,0 +1,111 @@
+.contact-help-holder{
+    display: flex;
+    align-items: flex-end;
+    column-gap: 30px;
+    .contact-help-column{
+        h3{
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'Quicksand', sans-serif;
+            color: $green;
+        }
+        h1{
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            font-family: 'Quicksand', sans-serif;
+            color: $blue-dark;
+        }
+        h4{
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'Quicksand', sans-serif;
+            color: $blue-dark;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            font-family: 'Lato', sans-serif;
+            color: $gray;
+        }
+    }
+}
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    iframe{
+        border-radius: 15px;
+    }
+}
+
+.contact-info-holder{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .contacy-info-item{
+        h5{
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-family: 'Quicksand', sans-serif;
+            color: $green;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            font-family: 'Lato', sans-serif;
+            color: $gray;
+        }
+        a{
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 700;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+            background-color: $green;
+            i{
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.contact-form-holder{
+    margin-top: 30px;
+    display: flex;
+    img{
+        width: 360px;
+        margin-top: 50px;
+        border-radius: 10px;
+    }
+    form{
+        h2{
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Quicksand', sans-serif;
+            color: $green;
+        }
+        p{
+            font-size: 14px;
+        }
+        button{
+            width: 200px;
+        }
+        textarea{
+            padding: 10px 10px 10px 20px;
+            min-height: 200px;
+            border: 1px solid $gray-light;
+            border-radius: 10px;
+        }
+    }
+    .contact-input-holder{
+        display: flex;
+        column-gap: 20px;
+    }
+}

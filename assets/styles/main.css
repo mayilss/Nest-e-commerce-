@@ -3470,4 +3470,144 @@ aside {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
+
+.contact-help-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.contact-help-holder .contact-help-column h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Quicksand', sans-serif;
+  color: #3BB77E;
+}
+
+.contact-help-holder .contact-help-column h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+  color: #253D4E;
+}
+
+.contact-help-holder .contact-help-column h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Quicksand', sans-serif;
+  color: #253D4E;
+}
+
+.contact-help-holder .contact-help-column p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  color: #7E7E7E;
+}
+
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map iframe {
+  border-radius: 15px;
+}
+
+.contact-info-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-info-holder .contacy-info-item h5 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: 'Quicksand', sans-serif;
+  color: #3BB77E;
+}
+
+.contact-info-holder .contacy-info-item p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: #7E7E7E;
+}
+
+.contact-info-holder .contacy-info-item a {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  background-color: #3BB77E;
+}
+
+.contact-info-holder .contacy-info-item a i {
+  margin-right: 5px;
+}
+
+.contact-form-holder {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-form-holder img {
+  width: 360px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.contact-form-holder form h2 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Quicksand', sans-serif;
+  color: #3BB77E;
+}
+
+.contact-form-holder form p {
+  font-size: 14px;
+}
+
+.contact-form-holder form button {
+  width: 200px;
+}
+
+.contact-form-holder form textarea {
+  padding: 10px 10px 10px 20px;
+  min-height: 200px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+}
+
+.contact-form-holder .contact-input-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
 /*# sourceMappingURL=main.css.map */
