@@ -1,70 +1,71 @@
-@media screen and (max-width: 426px){
-    .hp-product-card{
+@media screen and (max-width: 426px) {
+    .hp-product-card {
         margin-left: 200px;
     }
-    .hp-deals-content{
+    .hp-deals-content {
         row-gap: 125px;
     }
-    .hp-banner-bottom{
+    .hp-banner-bottom {
         display: none !important;
     }
-    .hp-categories-bottom{
+    .hp-categories-bottom {
         display: none !important;
     }
-    .hp-banner{
+    .hp-banner {
         display: none !important;
     }
 }
-@media screen and (max-width: 768px){
-    .owl-nav{
+@media screen and (max-width: 768px) {
+    .owl-nav {
         display: none;
         opacity: 0;
     }
-    .hp-categories-bottom-card{
+    .hp-categories-bottom-card {
         padding-left: 15px !important;
     }
-    .hp-best-sells{
+    .hp-best-sells {
         display: none;
     }
-    .hp-deals-card:nth-child(3){
+    .hp-deals-card:nth-child(3) {
         display: none !important;
     }
-    .hp-deals-card:nth-child(4){
+    .hp-deals-card:nth-child(4) {
         display: none !important;
     }
-    .hp-deals-item:nth-child(3){
+    .hp-deals-item:nth-child(3) {
         display: none !important;
     }
-    .hp-deals-item:nth-child(4){
+    .hp-deals-item:nth-child(4) {
         display: none !important;
     }
-    .hp-top-products-list:nth-child(3){
+    .hp-top-products-list:nth-child(3) {
         display: none !important;
     }
-    .hp-top-products-list:nth-child(4){
+    .hp-top-products-list:nth-child(4) {
         display: none !important;
     }
-    .hp-bottom-cards{
+    .hp-bottom-cards {
         display: none !important;
     }
 }
 
 //banner
-.hp-banner{
+.hp-banner {
     position: relative;
+    width: 100%;
 }
-.owl-dots{
+.owl-dots {
     position: absolute;
     bottom: 35px;
     width: 15px;
     height: 15px;
-    background:transparent;
+    background: transparent;
     left: 48%;
     display: flex;
 }
 
-.hp-banner-slide-one{
-    background-image: url(../../../../assets/images/slider-1.png);
+.hp-banner-slide-one {
+    background-image: url(../images/slider-1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,10 +75,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    
+    width: 100%;
 }
-.hp-banner-slide-two{
-    background-image: url(../../../../assets/images/slider-2.png);
+.hp-banner-slide-two {
+    background-image: url(../images/slider-2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,54 +87,54 @@
     margin: 15px;
     display: flex;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: flex-start;
+    width: 100%;
 }
 
-.hp-banner-content{
+.hp-banner-content {
     padding-left: 100px;
-    h1{
+    h1 {
         font-size: 72px;
         margin-bottom: 40px;
         color: $blue-dark;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         font-weight: 700;
-
     }
-    p{
+    p {
         font-size: 30px;
         margin-bottom: 65px;
         color: $gray;
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
     }
-    form{
+    form {
         background-color: white;
         border-radius: 35px;
         max-width: 450px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        i{
+        i {
             padding-left: 20px;
         }
-        input{
+        input {
             border: none;
             border-radius: 35px;
             padding: 15px;
             font-size: 18px;
-            font-family: 'Lato', sans-serif;
-            &:focus{
+            font-family: "Lato", sans-serif;
+            &:focus {
                 outline: none;
             }
         }
-        button{
+        button {
             background-color: $green;
             border: none;
             border-radius: 35px;
             padding: 15px 40px;
             font-size: 18px;
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Quicksand", sans-serif;
             color: white;
-            &:focus{
+            &:focus {
                 outline: none;
             }
         }
@@ -141,39 +142,39 @@
 }
 
 //Featured Categories
-.hp-categories{
+.hp-categories {
     display: flex;
     align-items: flex-end;
     column-gap: 20px;
     padding: 30px 0 30px 15px;
-    h2{
+    h2 {
         font-size: 32px;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         font-weight: 700;
         color: $blue-dark;
     }
-    a{
+    a {
         font-size: 16px;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         font-weight: 600;
         color: $blue-dark;
         cursor: pointer;
         transition: 0.3s ease-in-out;
-        &:hover{
+        &:hover {
             color: $green;
             transform: translateY(-3px);
         }
     }
 }
-.hp-categories-carousel{
+.hp-categories-carousel {
     margin: 0 15px 15px;
     position: relative;
-    .owl-nav{
+    .owl-nav {
         position: absolute;
         top: -80px;
         right: 25px;
         display: flex !important;
-        button{
+        button {
             background-color: transparent;
             border: none;
             cursor: pointer;
@@ -184,10 +185,10 @@
             justify-content: center !important;
             border-radius: 50% !important;
             transition: 0.3s ease-in-out !important;
-            &:hover{
+            &:hover {
                 background-color: $green !important;
             }
-            span{
+            span {
                 font-size: 36px !important;
                 margin-bottom: 5px !important;
             }
@@ -195,7 +196,7 @@
     }
 }
 
-.hp-categories-card{
+.hp-categories-card {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -203,53 +204,53 @@
     justify-content: center;
     width: 127px;
     height: 180px;
-    img{
+    img {
         max-width: 80px;
         margin-bottom: 15px;
         transition: 0.3 ease-in-out;
-        &:hover{
+        &:hover {
             transform: scale(1.05);
         }
     }
-    a{
+    a {
         font-size: 16px;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         color: $blue-dark;
         font-weight: 600;
     }
-    p{
+    p {
         font-size: 14px;
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
         color: $gray;
     }
 }
-.cat-1{
-    background-color: #FFF3FF;
+.cat-1 {
+    background-color: #fff3ff;
 }
-.cat-2{
-    background-color: #F2FCE4;
+.cat-2 {
+    background-color: #f2fce4;
 }
-.cat-3{
-    background-color: #FEEFEA;
+.cat-3 {
+    background-color: #feefea;
 }
-.cat-4{
-    background-color: #FFFCEB;
+.cat-4 {
+    background-color: #fffceb;
 }
-.hp-categories-bottom{
+.hp-categories-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 25px;
-    .card1{
-        background-image: url(../../../../assets/images/banner-1.png);
+    .card1 {
+        background-image: url(../images/banner-1.png);
     }
-    .card2{
-        background-image: url(../../../../assets/images/banner-2.png);
+    .card2 {
+        background-image: url(../images/banner-2.png);
     }
-    .card3{
-        background-image: url(../../../../assets/images/banner-3.png);
+    .card3 {
+        background-image: url(../images/banner-3.png);
     }
-    .hp-categories-bottom-card{
+    .hp-categories-bottom-card {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -260,35 +261,35 @@
         flex-direction: column;
         justify-content: center;
         padding-left: 75px;
-        h4{
+        h4 {
             font-size: 24px;
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Quicksand", sans-serif;
             font-weight: 700;
             color: $blue-dark;
             transition: 0.3s ease-in-out;
             margin-bottom: 30px;
-            &:hover{
+            &:hover {
                 transform: translateY(-3px);
             }
         }
-        a{
+        a {
             width: 100px;
             font-size: 12px;
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Quicksand", sans-serif;
             color: white;
             font-weight: 600;
             transition: 0.3s ease-in-out;
             background-color: $green;
             padding: 10px;
             border-radius: 5px;
-            i{
+            i {
                 margin-left: 8px;
                 transition: 0.3s ease-in-out;
             }
-            &:hover{
+            &:hover {
                 background-color: orange;
                 padding-right: 15px;
-                i{
+                i {
                     transform: translateX(3px);
                 }
             }
@@ -297,34 +298,34 @@
 }
 
 //Popular Products
-.hp-popular-products{
+.hp-popular-products {
     padding: 15px;
 }
-.hp-popular-products-nav{
+.hp-popular-products-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    h2{
+    h2 {
         font-size: 32px;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         font-weight: 700;
         color: $blue-dark;
     }
-    a{
+    a {
         font-size: 16px;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         font-weight: 600;
         color: $blue-dark;
         cursor: pointer;
         margin-left: 15px;
         transition: 0.3s ease-in-out;
-        &:hover{
+        &:hover {
             color: $green;
             transform: translateY(-3px);
         }
     }
 }
-.hp-popular-products-content{
+.hp-popular-products-content {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -332,7 +333,7 @@
     row-gap: 15px;
     margin-top: 30px;
 }
-.hp-product-card{
+.hp-product-card {
     position: relative;
     border-radius: 15px;
     padding: 10px;
@@ -341,15 +342,15 @@
     border: 1px solid $gray-light;
     width: 250px;
     transition: 0.3s ease-in-out;
-    &:hover{
+    &:hover {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border: 1px solid $green;
-        .product-img{
+        .product-img {
             opacity: 0;
             transform: scale3d(1.05, 1.05, 1.05) translateZ(0);
         }
     }
-    span{
+    span {
         position: absolute;
         padding: 5px 20px;
         top: 0;
@@ -358,92 +359,92 @@
         border-top-left-radius: 15px;
         border-bottom-right-radius: 15px;
         font-size: 12px;
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
         color: white;
         z-index: 11;
     }
-    .product-img{
+    .product-img {
         width: 225px;
         z-index: 10;
     }
-    .hover-img{
+    .hover-img {
         position: absolute;
         width: 225px;
     }
-    a{
+    a {
         font-size: 12px;
-        font-family: 'Lato', sans-serif;
-        color: #ADADAD;
+        font-family: "Lato", sans-serif;
+        color: #adadad;
         font-weight: 400;
         margin-top: 15px;
     }
-    h4{
-        a{
+    h4 {
+        a {
             font-size: 16px;
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Quicksand", sans-serif;
             font-weight: 700;
             color: $blue-dark;
             transition: 0.3s ease-in-out;
-            &:hover{
+            &:hover {
                 color: $green;
             }
         }
     }
-    .hp-product-stars{
+    .hp-product-stars {
         display: flex;
         margin-top: 15px;
-        i{
+        i {
             color: orange;
             font-size: 12px;
         }
-        p{
+        p {
             margin-left: 5px;
             font-size: 12px;
-            font-family: 'Lato', sans-serif;
+            font-family: "Lato", sans-serif;
             color: $gray;
         }
     }
-    .productor{
+    .productor {
         font-size: 14px;
-        color: #ADADAD;
-        font-family: 'Lato', sans-serif;
-        a{
+        color: #adadad;
+        font-family: "Lato", sans-serif;
+        a {
             font-size: 14px;
-            font-family: 'Lato', sans-serif;
+            font-family: "Lato", sans-serif;
             color: $green;
             font-weight: 400;
             transition: 0.3s ease-in-out;
-            &:hover{
+            &:hover {
                 color: orange;
             }
         }
     }
-    .price{
+    .price {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 10px;
-        p{
+        p {
             font-size: 18px;
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Quicksand", sans-serif;
             color: $green;
             font-weight: 700;
             margin-top: 15px;
         }
-        button{
+        button {
             border: none;
             font-size: 14px;
-            font-family: 'Lato', sans-serif;
+            font-family: "Lato", sans-serif;
             color: $green;
-            background-color: #DEF9EC;
+            background-color: #def9ec;
             padding: 10px;
             border-radius: 5px;
             transition: 0.3s ease-in-out;
-            &:hover{
+            &:hover {
                 background-color: $green;
                 color: white;
             }
-            i{
+            i {
                 margin-right: 5px;
             }
         }
@@ -451,10 +452,10 @@
 }
 
 //Best Sells
-.hp-best-sells{
+.hp-best-sells {
     padding: 15px;
-    .hp-best-sells-banner{
-        background-image: url(../../../../assets/images/banner-4.png);
+    .hp-best-sells-banner {
+        background-image: url(../images/banner-4.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -464,48 +465,48 @@
         margin: 50px 0 15px 0;
         display: flex;
         flex-direction: column;
-        h4{
+        h4 {
             font-size: 40px;
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Quicksand", sans-serif;
             font-weight: 700;
             color: $blue-dark;
             margin: 50px 0 100px 50px;
         }
-        a{
+        a {
             margin: 0 0 0 50px;
             width: 100px;
             font-size: 12px;
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Quicksand", sans-serif;
             color: white;
             font-weight: 600;
             transition: 0.3s ease-in-out;
             background-color: $green;
             padding: 10px;
             border-radius: 5px;
-            i{
+            i {
                 margin-left: 8px;
                 transition: 0.3s ease-in-out;
             }
-            &:hover{
+            &:hover {
                 background-color: orange;
                 padding-right: 15px;
-                i{
+                i {
                     transform: translateX(3px);
                 }
             }
         }
     }
-    .hp-best-sells-content{
+    .hp-best-sells-content {
         display: flex;
         align-items: center;
     }
 }
-.hp-best-sells-carousel{
+.hp-best-sells-carousel {
     width: calc(100% - 400px);
     margin-left: 15px;
     margin-top: 30px;
 }
-.hp-best-sells-card{
+.hp-best-sells-card {
     overflow: hidden;
     position: relative;
     height: 520px;
@@ -515,15 +516,15 @@
     flex-direction: column;
     border: 1px solid $gray-light;
     transition: 0.3s ease-in-out;
-    &:hover{
+    &:hover {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border: 1px solid $green;
-        .product-img{
+        .product-img {
             opacity: 0;
             transform: scale3d(1.05, 1.05, 1.05) translateZ(0);
         }
     }
-    span{
+    span {
         position: absolute;
         padding: 5px 20px;
         top: 0;
@@ -532,158 +533,157 @@
         border-top-left-radius: 15px;
         border-bottom-right-radius: 15px;
         font-size: 12px;
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
         color: white;
         z-index: 11;
     }
-    .product-img{
+    .product-img {
         width: 225px;
         z-index: 10;
     }
-    .hover-img{
+    .hover-img {
         position: absolute;
         width: 225px;
     }
-    a{
+    a {
         font-size: 12px;
-        font-family: 'Lato', sans-serif;
-        color: #ADADAD;
+        font-family: "Lato", sans-serif;
+        color: #adadad;
         font-weight: 400;
         margin-top: 15px;
         z-index: 11;
     }
-    h4{
-        a{
+    h4 {
+        a {
             font-size: 16px;
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Quicksand", sans-serif;
             font-weight: 700;
             color: $blue-dark;
             transition: 0.3s ease-in-out;
-            &:hover{
+            &:hover {
                 color: $green;
             }
         }
     }
-    .hp-product-stars{
+    .hp-product-stars {
         display: flex;
         margin-top: 15px;
-        i{
+        i {
             color: orange;
             font-size: 12px;
         }
     }
-    .price{
+    .price {
         font-size: 18px;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         color: $green;
         font-weight: 700;
         margin-top: 15px;
     }
-    .stocks-graphic{
+    .stocks-graphic {
         width: 100%;
         height: 5px;
         background-color: $gray-light;
         border-radius: 5px;
         margin-top: 15px;
         margin-bottom: 10px;
-        div{
+        div {
             width: 70%;
             height: 5px;
             background-color: $green;
             border-radius: 5px;
         }
     }
-    .stocks-numeral{
+    .stocks-numeral {
         font-size: 12px;
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
         color: black;
         font-weight: 400;
         margin-bottom: 10px;
     }
-    button{
+    button {
         border: none;
         font-size: 14px;
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
         color: white;
         background-color: $green;
         padding: 10px;
         border-radius: 5px;
         transition: 0.3s ease-in-out;
-        &:hover{
+        &:hover {
             background-color: orange;
             color: white;
             transform: translateY(-3px);
         }
-        i{
+        i {
             margin-right: 5px;
         }
     }
 }
 
 //Deals
-.hp-deals{
+.hp-deals {
     padding: 15px;
 }
-.hp-deals-nav{
+.hp-deals-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    h2{
+    h2 {
         font-size: 32px;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         color: $blue-dark;
         font-weight: 700;
     }
-    a{
+    a {
         font-size: 16px;
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
         color: $gray;
         font-weight: 400;
         transition: 0.3s ease-in-out;
-        &:hover{
+        &:hover {
             color: $green;
         }
     }
-    
 }
-.hp-deals-content{
+.hp-deals-content {
     margin-top: 30px;
     column-gap: 25px;
     margin-bottom: 150px;
 }
-.deals-banner1{
-    background-image: url(../../../../assets/images/banner-5.png);
+.deals-banner1 {
+    background-image: url(../images/banner-5.png);
 }
-.deals-banner2{
-    background-image: url(../../../../assets/images/banner-6.png);
+.deals-banner2 {
+    background-image: url(../images/banner-6.png);
 }
-.deals-banner3{
-    background-image: url(../../../../assets/images/banner-7.png);
+.deals-banner3 {
+    background-image: url(../images/banner-7.png);
 }
-.deals-banner4{
-    background-image: url(../../../../assets/images/banner-8.png);
+.deals-banner4 {
+    background-image: url(../images/banner-8.png);
 }
-.hp-deals-item{
+.hp-deals-item {
     height: 315px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
 }
-.hp-deals-card{
+.hp-deals-card {
     margin-top: 165px;
     z-index: 11;
     transition: 0.3s ease-in-out;
-    &:hover{
+    &:hover {
         transform: translateY(-5px);
     }
-    .hp-deals-card-time-holder{
+    .hp-deals-card-time-holder {
         column-gap: 10px;
         display: flex;
         align-items: center;
         justify-content: space-around;
         margin: 0 30px;
-        .deals-time{
+        .deals-time {
             background-color: white;
             border-radius: 5px;
             height: 60px;
@@ -692,25 +692,25 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            span{
+            span {
                 font-size: 18px;
-                font-family: 'Lato', sans-serif;
+                font-family: "Lato", sans-serif;
                 color: $green;
                 font-weight: 700;
                 transition: 0.3s ease-in-out;
-                &:hover{
+                &:hover {
                     transform: translateY(-3px);
                 }
             }
-            p{
+            p {
                 font-size: 12px;
-                font-family: 'Lato', sans-serif;
+                font-family: "Lato", sans-serif;
                 color: $gray;
                 font-weight: 400;
             }
         }
     }
-    .hp-deals-card-content{
+    .hp-deals-card-content {
         border-radius: 15px;
         padding: 10px;
         margin: 25px;
@@ -719,73 +719,73 @@
         background-color: white;
         z-index: 20;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        h4{
-            a{
+        h4 {
+            a {
                 font-size: 16px;
-                font-family: 'Quicksand', sans-serif;
+                font-family: "Quicksand", sans-serif;
                 font-weight: 700;
                 color: $blue-dark;
                 transition: 0.3s ease-in-out;
-                &:hover{
+                &:hover {
                     color: $green;
                 }
             }
         }
-        .hp-product-stars{
+        .hp-product-stars {
             display: flex;
             margin-top: 15px;
-            i{
+            i {
                 color: orange;
                 font-size: 12px;
             }
-            p{
+            p {
                 margin-left: 5px;
                 font-size: 12px;
-                font-family: 'Lato', sans-serif;
+                font-family: "Lato", sans-serif;
                 color: $gray;
             }
         }
-        .productor{
+        .productor {
             font-size: 14px;
-            color: #ADADAD;
-            font-family: 'Lato', sans-serif;
-            a{
+            color: #adadad;
+            font-family: "Lato", sans-serif;
+            a {
                 font-size: 14px;
-                font-family: 'Lato', sans-serif;
+                font-family: "Lato", sans-serif;
                 color: $green;
                 font-weight: 400;
                 transition: 0.3s ease-in-out;
-                &:hover{
+                &:hover {
                     color: orange;
                 }
             }
         }
-        .price{
+        .price {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 10px;
-            p{
+            p {
                 font-size: 18px;
-                font-family: 'Quicksand', sans-serif;
+                font-family: "Quicksand", sans-serif;
                 color: $green;
                 font-weight: 700;
                 margin-top: 15px;
             }
-            button{
+            button {
                 border: none;
                 font-size: 14px;
-                font-family: 'Lato', sans-serif;
+                font-family: "Lato", sans-serif;
                 color: $green;
-                background-color: #DEF9EC;
+                background-color: #def9ec;
                 padding: 10px;
                 border-radius: 5px;
                 transition: 0.3s ease-in-out;
-                &:hover{
+                &:hover {
                     background-color: $green;
                     color: white;
                 }
-                i{
+                i {
                     margin-right: 5px;
                 }
             }
@@ -794,66 +794,66 @@
 }
 
 //Top Products
-.hp-top-products{
+.hp-top-products {
     padding: 15px;
-    h2{
+    h2 {
         font-size: 24px;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         color: $blue-dark;
         font-weight: 700;
     }
-    img{
+    img {
         width: 100px;
         border-radius: 5px;
     }
 }
-.underline{
+.underline {
     width: 100%;
     height: 2px;
     background-color: $gray-light;
     margin: 15px 0;
-    div{
+    div {
         width: 25%;
         height: 3px;
-        background-color: #BCE3C9;
+        background-color: #bce3c9;
     }
 }
-.hp-top-prods-item{
+.hp-top-prods-item {
     display: flex;
     column-gap: 15px;
     margin: 25px 0;
     transition: 0.3s ease-in-out;
-    &:hover{
+    &:hover {
         transform: translateY(-5px);
     }
-    h4{
-        a{
+    h4 {
+        a {
             font-size: 16px;
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Quicksand", sans-serif;
             color: $blue-dark;
             font-weight: 700;
             margin-bottom: 10px;
-            &:hover{
-            color: $green;
-        }
+            &:hover {
+                color: $green;
+            }
         }
     }
-    .hp-product-stars{
+    .hp-product-stars {
         display: flex;
-        i{
+        i {
             color: orange;
             font-size: 12px;
         }
-        p{
+        p {
             margin-left: 5px;
             font-size: 12px;
-            font-family: 'Lato', sans-serif;
+            font-family: "Lato", sans-serif;
             color: $gray;
         }
     }
-    .price{
+    .price {
         font-size: 18px;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         color: $green;
         font-weight: 700;
         margin-top: 15px;
@@ -861,8 +861,8 @@
 }
 
 //Banner Bottom
-.hp-banner-bottom{
-    background-image: url(../../../../assets/images/banner-10.png);
+.hp-banner-bottom {
+    background-image: url(../images/banner-10.png);
     min-height: 230px;
     margin: 15px;
     border-radius: 15px;
@@ -871,58 +871,58 @@
     background-repeat: no-repeat;
     position: relative;
     padding: 84px 78px;
-    img{
+    img {
         position: absolute;
         bottom: 0;
         right: 45px;
         max-width: 40%;
     }
-    h3{
+    h3 {
         font-size: 40px;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
         color: $blue-dark;
         font-weight: 700;
         margin-bottom: 20px;
     }
-    p{
+    p {
         font-size: 18px;
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
         color: $gray;
         font-weight: 400;
         margin-bottom: 40px;
-        span{
+        span {
             color: $green;
         }
     }
-    form{
+    form {
         background-color: white;
         border-radius: 35px;
         max-width: 450px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        i{
+        i {
             padding-left: 20px;
         }
-        input{
+        input {
             border: none;
             border-radius: 35px;
             padding: 15px;
             font-size: 18px;
-            font-family: 'Lato', sans-serif;
-            &:focus{
+            font-family: "Lato", sans-serif;
+            &:focus {
                 outline: none;
             }
         }
-        button{
+        button {
             background-color: $green;
             border: none;
             border-radius: 35px;
             padding: 15px 40px;
             font-size: 18px;
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Quicksand", sans-serif;
             color: white;
-            &:focus{
+            &:focus {
                 outline: none;
             }
         }
@@ -931,42 +931,38 @@
 
 //bottom cards
 
-.hp-bottom-cards{
+.hp-bottom-cards {
     padding: 15px;
     column-gap: 20px;
     row-gap: 20px;
-    .hp-bottom-card{
+    .hp-bottom-card {
         display: flex;
         align-items: center;
         background-color: $gray-light;
         column-gap: 15px;
         border-radius: 10px;
         padding: 20px;
-        &:hover{
-            img{
+        &:hover {
+            img {
                 transform: translateY(-5px);
             }
         }
-        img{
+        img {
             width: 60px;
             transition: 0.3s ease-in-out;
         }
-        h4{
+        h4 {
             font-size: 18px;
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Quicksand", sans-serif;
             color: $blue-dark;
             font-weight: 700;
             margin-bottom: 10px;
         }
-        p{
+        p {
             font-size: 16px;
-            font-family: 'Lato', sans-serif;
+            font-family: "Lato", sans-serif;
             color: $gray;
             font-weight: 500;
         }
     }
 }
-
-
-
-    

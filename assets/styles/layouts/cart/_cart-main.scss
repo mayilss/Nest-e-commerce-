@@ -1,0 +1,150 @@
+.cart-main-section {
+    display: flex;
+}
+
+.cart-head-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    a {
+        color: $gray !important;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: "Lato", sans-serif;
+        i {
+            margin-right: 5px;
+        }
+    }
+    .cart-title {
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            font-family: "Quicksand", sans-serif;
+            color: $blue-dark;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 700;
+            font-family: "Quicksand", sans-serif;
+            color: $gray;
+            span {
+                color: $green;
+            }
+        }
+    }
+}
+
+.cart-table-row {
+    display: flex;
+    border: 1px solid $gray-light;
+    margin-top: 0;
+}
+.cart-table-product {
+    display: flex;
+    margin-top: 0;
+}
+.table-head {
+    background-color: $gray-light;
+    padding: 18px;
+    border-radius: 10px;
+    p {
+        font-size: 17px;
+        color: $blue-dark;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+    }
+}
+.cart-table-row-item {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    input {
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid $gray-light;
+    }
+    a {
+        color: $blue-dark;
+        font-size: 16px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+        margin-left: 10px;
+        transition: 0.3s ease;
+        &:hover {
+            color: orange;
+        }
+    }
+    .unit-price {
+        font-size: 24px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+        color: $gray;
+    }
+    .subtotal {
+        font-size: 24px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+        color: $green;
+    }
+    button {
+        background-color: transparent;
+        border: none;
+        color: $gray;
+    }
+    .quantity-holder {
+        position: relative;
+        .quantity-btn {
+            position: absolute;
+            color: $green;
+        }
+        .quantity-btn-plus {
+            right: 5px;
+            top: 3px;
+        }
+        .quantity-btn-minus {
+            right: 5px;
+            top: 25px;
+        }
+    }
+}
+
+.cart-bill-holder {
+    padding: 20px;
+}
+.cart-bill {
+    padding: 20px;
+    margin-top: 100px;
+    border: 1px solid $gray-light;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid $gray-light;
+        padding: 10px;
+        border-radius: 10px;
+        h6 {
+            font-size: 16px;
+            font-family: "Quicksand", sans-serif;
+            font-weight: 700;
+            color: $gray;
+        }
+        h5 {
+            font-size: 20px;
+            font-family: "Quicksand", sans-serif;
+            font-weight: 700;
+            color: $blue-dark;
+        }
+        p {
+            font-size: 24px;
+            font-family: "Quicksand", sans-serif;
+            font-weight: 700;
+            color: $green;
+        }
+    }
+}

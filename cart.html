@@ -28,6 +28,38 @@
 </head>
 <body>
     <header class="homepage-header container-fluid">
+        <div class="header-top container-fluid">
+            <div class="header-top-left">
+                <ul>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                </ul>
+            </div>
+            <div class="header-top-mid">
+                <p>Trendy 25silver jewelry, save up 35% off today</p>
+            </div>
+            <div class="header-top-right">
+                <p>Need help? Call Us: <span>+ 1800 900</span></p>
+                <div class="w3-dropdown-hover header-top-dropdown-btn">
+                    <button class="">English<i class="fa-solid fa-angle-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-border header-top-dropdown-content">
+                        <a href="#" class="w3-bar-item w3-button"><img width="15px" height="15px" src="./assets/images/france.png" alt="">Français</a>
+                        <a href="#" class="w3-bar-item w3-button"><img width="15px" height="15px" src="./assets/images/germany.png">Deutsch</a>
+                        <a href="#" class="w3-bar-item w3-button"><img width="15px" height="15px" src="./assets/images/russia.png">Русский</a>
+                    </div>
+                </div>
+                <div class="w3-dropdown-hover header-top-dropdown-btn">
+                    <button class="">USD<i class="fa-solid fa-angle-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-border header-top-dropdown-content">
+                        <a href="#" class="w3-bar-item w3-button"><img width="15px" height="15px" src="./assets/images/france.png" alt="">EU</a>
+                        <a href="#" class="w3-bar-item w3-button"><img width="15px" height="15px" src="./assets/images/germany.png">EU</a>
+                        <a href="#" class="w3-bar-item w3-button"><img width="15px" height="15px" src="./assets/images/russia.png">RUB</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="header-bottom container-fluid">
             <button class="nav-mobile-button">
                 <div class="nav-mobile-stick"></div>
@@ -170,7 +202,7 @@
                 <a href="#" class="nav-dropdown-item">Home 6</a>
             </div>
         </div>
-        <a href="#" class="nav-about nav-item">About</a>
+        <a href="./about.html" class="nav-about nav-item">About</a>
         <div class="nav-dropdown-holder">
             <a href="#" class="nav-shop nav-item">Shop<i class="fa-solid fa-angle-down"></i></a>
             <div class="nav-dropdown-content">
@@ -279,133 +311,85 @@
     </nav>
     <div class="path">
         <a href="./index.html"><i class="fa-solid fa-house"></i>Home</a>
-        <a href="#"><i class="fa-solid fa-angle-right"></i>Pages</a>
-        <a href="#"><i class="fa-solid fa-angle-right"></i>My Account</a>
+        <a href="#"><i class="fa-solid fa-angle-right"></i>Shop</a>
+        <a href="#"><i class="fa-solid fa-angle-right"></i>Cart</a>
     </div>
-    <main>
-        <div class="myAcc-content container">
-            <div class="myAcc-tab-holder col-3">
-                <ul class="myAcc-tabs">
-                    <li class="active-tab" data-tab-target="#dashboard"><i class="fa-solid fa-sliders"></i>Dashboard</li>
-                    <li data-tab-target="#orders"><i class="fa-solid fa-bag-shopping"></i>Orders</li>
-                    <li data-tab-target="#track-order"><i class="fa-solid fa-cart-arrow-down"></i>Track Your Order</li>
-                    <li data-tab-target="#address"><i class="fa-solid fa-location-dot"></i>My Address</li>
-                    <li data-tab-target="#acc-details"><i class="fa-solid fa-user"></i>Account Details</li>
-                    <li><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</li>
-                </ul>
-            </div>
-            <div class="myAcc-tab-content-holder col-9">
-                <div class="active-tab-content" id="dashboard" data-tab-content>
-                    <h1>Hello Rosie!</h1>
-                    <p>From your account dashboard. you can easily check & view your <a href="#">recent orders</a> ,
-                        manage your <a href="#">shipping and billing addresses</a>  and <a href="#">edit your password and account details</a>.</p>
-                </div>
-                <div id="orders" data-tab-content>
-                    <h1>Your Orders</h1>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Order</th>
-                                <th>Date</th>
-                                <th>Status</th>
-                                <th>Total</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>#1735</td>
-                                <td>Aug 23, 2018</td>
-                                <td>Pending</td>
-                                <td>$265.00</td>
-                                <td><a href="#">View</a></td>
-                            </tr>
-                            <tr>
-                                <td>#1735</td>
-                                <td>Aug 23, 2018</td>
-                                <td>Pending</td>
-                                <td>$265.00</td>
-                                <td><a href="#">View</a></td>
-                            </tr>
-                            <tr>
-                                <td>#1735</td>
-                                <td>Aug 23, 2018</td>
-                                <td>Pending</td>
-                                <td>$265.00</td>
-                                <td><a href="#">View</a></td>
-                            </tr>
-                    </table>
-                </div>
-                <div id="track-order" data-tab-content>
-                    <h1>Orders tracking</h1>
-                    <p>To track your order please enter your OrderID in the box below and press "Track" button. This was given to you on your receipt and in the confirmation email you should have received.</p>
-                    <form action="">
-                            <label for="">Order ID</label>
-                            <input type="text" class="form-control" placeholder="Enter your Order ID">
-                            <label for="">Billing email</label>
-                            <input type="text" class="form-control" placeholder="Enter your email address">
-                            <button>Track</button>
-                    </form>
-                </div>
-                <div id="address" data-tab-content>
-                    <div class="address-holder">
-                        <h1>Billing Address</h1>
-                        <p>3522 Interstate</p>
-                        <p>75 Business Spur,</p>
-                        <p>Sault Ste.</p>
-                        <p>Marie, MI 49783</p>
-                        <p>New York</p>
-                        <a href="#">Edit</a>
+
+    <main class="container-fluid">
+        <div class="cart-main-section">
+            <div class="cart-content-holder col-8">
+                <div class="cart-head-holder">
+                    <div class="cart-title">
+                        <h1>Your Cart</h1>
+                        <p>There are <span>0</span> products in your cart</p>
                     </div>
-                    <div class="address-holder">
-                        <h2>Shipping Address</h2>
-                        <p>3522 Interstate</p>
-                        <p>75 Business Spur,</p>
-                        <p>Sault Ste.</p>
-                        <p>Marie, MI 49783</p>
-                        <p>New York</p>
-                        <a href="#">Edit</a>
-                    </div>                    
+                    <a><i class="fa-solid fa-trash-can"></i>Clear Cart</a>
                 </div>
-                <div id="acc-details" data-tab-content>
-                    <h2>Account Details</h2>
-                    <p>Already have an account? <a href="#">Log in instead!</a></p>
-                    <form action="">
-                        <div>
-                            <div class="col">
-                                <label for="">First Name</label>
-                                <input type="text">
-                            </div>
-                            <div class="col">
-                                <label for="">Last Name</label>
-                                <input type="text">
-                            </div>
-                        </div>                       
-                        <div>
-                            <label for="">Display Name</label>
-                            <input type="text">
+                <div class="cart-table-row table-head">
+                    <div class="cart-table-row-item col-6">
+                        <p>Product</p>
+                    </div>
+                    <div class="cart-table-row-item col">
+                        <p>Unit Price</p>
+                    </div>
+                    <div class="cart-table-row-item col">
+                        <p>Quantity</p>
+                    </div>
+                    <div class="cart-table-row-item col">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="cart-table-row-item col">
+                        <p>Remove</p>
+                    </div>
+                </div>
+                 <div class="cart-table-product">
+                <!-- <div class="cart-table-row-item col-6">
+                        <img width="120px" src="./assets/images/product-1-1.jpg" alt="">
+                        <a href="#">Field Roast Chao Cheese Creamy Original</a>
+                    </div>
+                    <div class="cart-table-row-item col">
+                        <p class="unit-price">$100.00</p>
+                    </div>
+                    <div class="cart-table-row-item col">
+                        <div class="quantity-holder">
+                            <button class="quantity-btn quantity-btn-minus"><i class="fa-solid fa-angle-down"></i></button>
+                            <input type="text" value="1">
+                            <button class="quantity-btn quantity-btn-plus"><i class="fa-solid fa-angle-up"></i></button>
                         </div>
-                        <div>
-                            <label for="">Email Address</label>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <label for="">Current Password</label>
-                            <input type="password">
-                        </div>
-                        <div>
-                            <label for="">New Password</label>
-                            <input type="password">
-                        </div>
-                        <div>
-                            <label for="">Confirm New Password</label>
-                            <input type="password">
-                        </div>
-                        <button class="btn btn-primary">Save Changes</button>
-                    </form>
+                    </div>
+                    <div class="cart-table-row-item col">
+                        <p class="subtotal">$100.00</p>
+                    </div>
+                    <div class="cart-table-row-item col">
+                        <button><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>  -->
+            </div>
+        </div>
+        <div class="cart-bill-holder col-4">
+            <div class="cart-bill">
+                <div class="bill-subtotal">
+                    <h6>Subtotal</h6>
+                    <p class="subtotal">$100.00</p>
+                </div>
+                <div class="bill-shipping">
+                    <h6>Shipping</h6>
+                    <h5 class="shipping">Free</h5>
+                </div>
+                <div class="bill-estimate">
+                    <h6>Estimated for</h6>
+                    <h5 class="estimate">United Kingdom</h5>
+                </div>
+                <div class="bill-total">
+                    <h6>Total</h6>
+                    <p class="total">$100.00</p>
                 </div>
             </div>
-        </div>      
+        </div>
+        </div>
+        
+        
+
     </main>
 
 
@@ -572,7 +556,7 @@
     <script src="./assets/javascript/best-sells-carousel.js"></script>
     <script src="./assets/javascript/nav-dropdown.js"></script>
     <script src="./assets/javascript/welcome-carousel.js"></script>
-    <script src="./assets/javascript/shop-dropdown.js"></script>
-    <script src="./assets/javascript/myAcc-tabs.js"></script>
+    <!-- <script src="./assets/javascript/shop-dropdown.js"></script> -->
+    <script src="./assets/javascript/cart.js"></script>
 </body>
 </html>

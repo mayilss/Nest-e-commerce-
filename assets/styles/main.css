@@ -704,7 +704,7 @@ li {
 }
 
 .nav-mega-dropdown-content .mega-dropdown-content-img {
-  background-image: url(../../../../assets/images/banner-menu.png);
+  background-image: url(../images/banner-menu.png);
   background-size: cover;
   background-position: center;
   width: 475px;
@@ -1015,6 +1015,7 @@ li {
 
 .hp-banner {
   position: relative;
+  width: 100%;
 }
 
 .owl-dots {
@@ -1030,7 +1031,7 @@ li {
 }
 
 .hp-banner-slide-one {
-  background-image: url(../../../../assets/images/slider-1.png);
+  background-image: url(../images/slider-1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1046,10 +1047,11 @@ li {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  width: 100%;
 }
 
 .hp-banner-slide-two {
-  background-image: url(../../../../assets/images/slider-2.png);
+  background-image: url(../images/slider-2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1065,6 +1067,7 @@ li {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  width: 100%;
 }
 
 .hp-banner-content {
@@ -1075,7 +1078,7 @@ li {
   font-size: 72px;
   margin-bottom: 40px;
   color: #253D4E;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
 }
 
@@ -1083,7 +1086,7 @@ li {
   font-size: 30px;
   margin-bottom: 65px;
   color: #7E7E7E;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .hp-banner-content form {
@@ -1110,7 +1113,7 @@ li {
   border-radius: 35px;
   padding: 15px;
   font-size: 18px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .hp-banner-content form input:focus {
@@ -1123,7 +1126,7 @@ li {
   border-radius: 35px;
   padding: 15px 40px;
   font-size: 18px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: white;
 }
 
@@ -1145,14 +1148,14 @@ li {
 
 .hp-categories h2 {
   font-size: 32px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
   color: #253D4E;
 }
 
 .hp-categories a {
   font-size: 16px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 600;
   color: #253D4E;
   cursor: pointer;
@@ -1242,31 +1245,31 @@ li {
 
 .hp-categories-card a {
   font-size: 16px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #253D4E;
   font-weight: 600;
 }
 
 .hp-categories-card p {
   font-size: 14px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #7E7E7E;
 }
 
 .cat-1 {
-  background-color: #FFF3FF;
+  background-color: #fff3ff;
 }
 
 .cat-2 {
-  background-color: #F2FCE4;
+  background-color: #f2fce4;
 }
 
 .cat-3 {
-  background-color: #FEEFEA;
+  background-color: #feefea;
 }
 
 .cat-4 {
-  background-color: #FFFCEB;
+  background-color: #fffceb;
 }
 
 .hp-categories-bottom {
@@ -1284,15 +1287,15 @@ li {
 }
 
 .hp-categories-bottom .card1 {
-  background-image: url(../../../../assets/images/banner-1.png);
+  background-image: url(../images/banner-1.png);
 }
 
 .hp-categories-bottom .card2 {
-  background-image: url(../../../../assets/images/banner-2.png);
+  background-image: url(../images/banner-2.png);
 }
 
 .hp-categories-bottom .card3 {
-  background-image: url(../../../../assets/images/banner-3.png);
+  background-image: url(../images/banner-3.png);
 }
 
 .hp-categories-bottom .hp-categories-bottom-card {
@@ -1317,7 +1320,7 @@ li {
 
 .hp-categories-bottom .hp-categories-bottom-card h4 {
   font-size: 24px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
   color: #253D4E;
   -webkit-transition: 0.3s ease-in-out;
@@ -1333,7 +1336,7 @@ li {
 .hp-categories-bottom .hp-categories-bottom-card a {
   width: 100px;
   font-size: 12px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: white;
   font-weight: 600;
   -webkit-transition: 0.3s ease-in-out;
@@ -1377,14 +1380,14 @@ li {
 
 .hp-popular-products-nav h2 {
   font-size: 32px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
   color: #253D4E;
 }
 
 .hp-popular-products-nav a {
   font-size: 16px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 600;
   color: #253D4E;
   cursor: pointer;
@@ -1451,7 +1454,7 @@ li {
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: white;
   z-index: 11;
 }
@@ -1468,15 +1471,15 @@ li {
 
 .hp-product-card a {
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
-  color: #ADADAD;
+  font-family: "Lato", sans-serif;
+  color: #adadad;
   font-weight: 400;
   margin-top: 15px;
 }
 
 .hp-product-card h4 a {
   font-size: 16px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
   color: #253D4E;
   -webkit-transition: 0.3s ease-in-out;
@@ -1502,19 +1505,19 @@ li {
 .hp-product-card .hp-product-stars p {
   margin-left: 5px;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #7E7E7E;
 }
 
 .hp-product-card .productor {
   font-size: 14px;
-  color: #ADADAD;
-  font-family: 'Lato', sans-serif;
+  color: #adadad;
+  font-family: "Lato", sans-serif;
 }
 
 .hp-product-card .productor a {
   font-size: 14px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #3BB77E;
   font-weight: 400;
   -webkit-transition: 0.3s ease-in-out;
@@ -1540,7 +1543,7 @@ li {
 
 .hp-product-card .price p {
   font-size: 18px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #3BB77E;
   font-weight: 700;
   margin-top: 15px;
@@ -1549,9 +1552,9 @@ li {
 .hp-product-card .price button {
   border: none;
   font-size: 14px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #3BB77E;
-  background-color: #DEF9EC;
+  background-color: #def9ec;
   padding: 10px;
   border-radius: 5px;
   -webkit-transition: 0.3s ease-in-out;
@@ -1572,7 +1575,7 @@ li {
 }
 
 .hp-best-sells .hp-best-sells-banner {
-  background-image: url(../../../../assets/images/banner-4.png);
+  background-image: url(../images/banner-4.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1591,7 +1594,7 @@ li {
 
 .hp-best-sells .hp-best-sells-banner h4 {
   font-size: 40px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
   color: #253D4E;
   margin: 50px 0 100px 50px;
@@ -1601,7 +1604,7 @@ li {
   margin: 0 0 0 50px;
   width: 100px;
   font-size: 12px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: white;
   font-weight: 600;
   -webkit-transition: 0.3s ease-in-out;
@@ -1681,7 +1684,7 @@ li {
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: white;
   z-index: 11;
 }
@@ -1698,8 +1701,8 @@ li {
 
 .hp-best-sells-card a {
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
-  color: #ADADAD;
+  font-family: "Lato", sans-serif;
+  color: #adadad;
   font-weight: 400;
   margin-top: 15px;
   z-index: 11;
@@ -1707,7 +1710,7 @@ li {
 
 .hp-best-sells-card h4 a {
   font-size: 16px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
   color: #253D4E;
   -webkit-transition: 0.3s ease-in-out;
@@ -1732,7 +1735,7 @@ li {
 
 .hp-best-sells-card .price {
   font-size: 18px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #3BB77E;
   font-weight: 700;
   margin-top: 15px;
@@ -1756,7 +1759,7 @@ li {
 
 .hp-best-sells-card .stocks-numeral {
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: black;
   font-weight: 400;
   margin-bottom: 10px;
@@ -1765,7 +1768,7 @@ li {
 .hp-best-sells-card button {
   border: none;
   font-size: 14px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: white;
   background-color: #3BB77E;
   padding: 10px;
@@ -1803,14 +1806,14 @@ li {
 
 .hp-deals-nav h2 {
   font-size: 32px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #253D4E;
   font-weight: 700;
 }
 
 .hp-deals-nav a {
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #7E7E7E;
   font-weight: 400;
   -webkit-transition: 0.3s ease-in-out;
@@ -1829,19 +1832,19 @@ li {
 }
 
 .deals-banner1 {
-  background-image: url(../../../../assets/images/banner-5.png);
+  background-image: url(../images/banner-5.png);
 }
 
 .deals-banner2 {
-  background-image: url(../../../../assets/images/banner-6.png);
+  background-image: url(../images/banner-6.png);
 }
 
 .deals-banner3 {
-  background-image: url(../../../../assets/images/banner-7.png);
+  background-image: url(../images/banner-7.png);
 }
 
 .deals-banner4 {
-  background-image: url(../../../../assets/images/banner-8.png);
+  background-image: url(../images/banner-8.png);
 }
 
 .hp-deals-item {
@@ -1900,7 +1903,7 @@ li {
 
 .hp-deals-card .hp-deals-card-time-holder .deals-time span {
   font-size: 18px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #3BB77E;
   font-weight: 700;
   -webkit-transition: 0.3s ease-in-out;
@@ -1914,7 +1917,7 @@ li {
 
 .hp-deals-card .hp-deals-card-time-holder .deals-time p {
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #7E7E7E;
   font-weight: 400;
 }
@@ -1938,7 +1941,7 @@ li {
 
 .hp-deals-card .hp-deals-card-content h4 a {
   font-size: 16px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
   color: #253D4E;
   -webkit-transition: 0.3s ease-in-out;
@@ -1964,19 +1967,19 @@ li {
 .hp-deals-card .hp-deals-card-content .hp-product-stars p {
   margin-left: 5px;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #7E7E7E;
 }
 
 .hp-deals-card .hp-deals-card-content .productor {
   font-size: 14px;
-  color: #ADADAD;
-  font-family: 'Lato', sans-serif;
+  color: #adadad;
+  font-family: "Lato", sans-serif;
 }
 
 .hp-deals-card .hp-deals-card-content .productor a {
   font-size: 14px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #3BB77E;
   font-weight: 400;
   -webkit-transition: 0.3s ease-in-out;
@@ -2002,7 +2005,7 @@ li {
 
 .hp-deals-card .hp-deals-card-content .price p {
   font-size: 18px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #3BB77E;
   font-weight: 700;
   margin-top: 15px;
@@ -2011,9 +2014,9 @@ li {
 .hp-deals-card .hp-deals-card-content .price button {
   border: none;
   font-size: 14px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #3BB77E;
-  background-color: #DEF9EC;
+  background-color: #def9ec;
   padding: 10px;
   border-radius: 5px;
   -webkit-transition: 0.3s ease-in-out;
@@ -2035,7 +2038,7 @@ li {
 
 .hp-top-products h2 {
   font-size: 24px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #253D4E;
   font-weight: 700;
 }
@@ -2055,7 +2058,7 @@ li {
 .underline div {
   width: 25%;
   height: 3px;
-  background-color: #BCE3C9;
+  background-color: #bce3c9;
 }
 
 .hp-top-prods-item {
@@ -2076,7 +2079,7 @@ li {
 
 .hp-top-prods-item h4 a {
   font-size: 16px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #253D4E;
   font-weight: 700;
   margin-bottom: 10px;
@@ -2100,20 +2103,20 @@ li {
 .hp-top-prods-item .hp-product-stars p {
   margin-left: 5px;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #7E7E7E;
 }
 
 .hp-top-prods-item .price {
   font-size: 18px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #3BB77E;
   font-weight: 700;
   margin-top: 15px;
 }
 
 .hp-banner-bottom {
-  background-image: url(../../../../assets/images/banner-10.png);
+  background-image: url(../images/banner-10.png);
   min-height: 230px;
   margin: 15px;
   border-radius: 15px;
@@ -2133,7 +2136,7 @@ li {
 
 .hp-banner-bottom h3 {
   font-size: 40px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #253D4E;
   font-weight: 700;
   margin-bottom: 20px;
@@ -2141,7 +2144,7 @@ li {
 
 .hp-banner-bottom p {
   font-size: 18px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #7E7E7E;
   font-weight: 400;
   margin-bottom: 40px;
@@ -2175,7 +2178,7 @@ li {
   border-radius: 35px;
   padding: 15px;
   font-size: 18px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .hp-banner-bottom form input:focus {
@@ -2188,7 +2191,7 @@ li {
   border-radius: 35px;
   padding: 15px 40px;
   font-size: 18px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: white;
 }
 
@@ -2230,7 +2233,7 @@ li {
 
 .hp-bottom-cards .hp-bottom-card h4 {
   font-size: 18px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #253D4E;
   font-weight: 700;
   margin-bottom: 10px;
@@ -2238,7 +2241,7 @@ li {
 
 .hp-bottom-cards .hp-bottom-card p {
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #7E7E7E;
   font-weight: 500;
 }
@@ -2694,7 +2697,7 @@ footer h2 {
 }
 
 .about-banner {
-  background-image: url(../../../../assets/images/about-9.png);
+  background-image: url(../images/about-9.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3814,5 +3817,206 @@ aside {
 .active-tab {
   background-color: #3BB77E;
   color: white !important;
+}
+
+.cart-main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart-head-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.cart-head-holder a {
+  color: #7E7E7E !important;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+
+.cart-head-holder a i {
+  margin-right: 5px;
+}
+
+.cart-head-holder .cart-title h1 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  color: #253D4E;
+}
+
+.cart-head-holder .cart-title p {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  color: #7E7E7E;
+}
+
+.cart-head-holder .cart-title p span {
+  color: #3BB77E;
+}
+
+.cart-table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ececec;
+  margin-top: 0;
+}
+
+.cart-table-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+}
+
+.table-head {
+  background-color: #ececec;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.table-head p {
+  font-size: 17px;
+  color: #253D4E;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+.cart-table-row-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+.cart-table-row-item input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+}
+
+.cart-table-row-item a {
+  color: #253D4E;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.cart-table-row-item a:hover {
+  color: orange;
+}
+
+.cart-table-row-item .unit-price {
+  font-size: 24px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #7E7E7E;
+}
+
+.cart-table-row-item .subtotal {
+  font-size: 24px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #3BB77E;
+}
+
+.cart-table-row-item button {
+  background-color: transparent;
+  border: none;
+  color: #7E7E7E;
+}
+
+.cart-table-row-item .quantity-holder {
+  position: relative;
+}
+
+.cart-table-row-item .quantity-holder .quantity-btn {
+  position: absolute;
+  color: #3BB77E;
+}
+
+.cart-table-row-item .quantity-holder .quantity-btn-plus {
+  right: 5px;
+  top: 3px;
+}
+
+.cart-table-row-item .quantity-holder .quantity-btn-minus {
+  right: 5px;
+  top: 25px;
+}
+
+.cart-bill-holder {
+  padding: 20px;
+}
+
+.cart-bill {
+  padding: 20px;
+  margin-top: 100px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+
+.cart-bill div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ececec;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cart-bill div h6 {
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #7E7E7E;
+}
+
+.cart-bill div h5 {
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #253D4E;
+}
+
+.cart-bill div p {
+  font-size: 24px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #3BB77E;
 }
 /*# sourceMappingURL=main.css.map */
